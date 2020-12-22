@@ -47,7 +47,7 @@
     left: 0;
     top: 0;
     background: pink;
-    width: 50px;
+    width: 70px;
     height: 100vh;
     z-index: 999;
     transition: 1s ease;
@@ -55,7 +55,7 @@
 
 label
 {
-    position: absolute;
+    position: fixed;
     z-index: 1000;
 }
 
@@ -72,14 +72,13 @@ label #sidebar_btn
     opacity: 1;
     position: fixed;
     top: 0;
-    left: 70px;
+    left: 80px;
     z-index: 9999;
     transition: left 1s ease;
     font-size: 30px;
 }
 .sidebar ul
 {
-    margin-top: 50px;
     list-style: none;
     text-decoration: none;
 }
@@ -87,8 +86,6 @@ label #sidebar_btn
 .sidebar ul li #a
 {
     margin: 5px;
-    size: 30px;
-    line-height: 120px;
     padding-left: 7px;
     font-size: 25px;
     color: black;
@@ -114,14 +111,17 @@ label #sidebar_btn
 .sidebar ul li
 {
     width: 200px;
-    transition: 1s ease;
+    transition: 0.3s ease;
+    height: 14.29vh;
+    padding-top: 35px;
+    /* line-height: 130px; */
 
 }
 
 #check:checked ~.sidebar ul li #c
 {
     opacity: 1;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
 }
 
