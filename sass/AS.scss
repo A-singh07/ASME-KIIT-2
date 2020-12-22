@@ -1,0 +1,179 @@
+@import 'config';
+@import 'some';
+
+
+section{
+    background-color: rgba(255, 228, 196, 0.842);
+    // background: url(/Assets/doodle-3.jpg);
+    background-size: cover;
+    padding: 0 180px;
+
+    .main-container{
+        background-color:white;
+        box-shadow: 2px 0px 20px rgba(71, 71, 71, 0.5);
+        font-family: $font-type1;
+        height: 100%;
+        // margin: 0 auto;
+
+        .about{
+            // background-color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+    
+            h1{
+                // background-color: cadetblue;
+                padding: 20px;
+                font-size: 4em;
+                margin: 0 0 0 70px;
+                font-weight: 600;
+            }
+    
+            p{
+                // background-color: burlywood;
+                width: 700px;
+                margin-left: auto;
+                margin-right: 10px;
+                padding: 20px;
+                font-size: 1.1em;
+                text-align: justify;
+                font-weight: 500;
+            }
+        }
+
+        .timeline{
+            // background-color: yellow;
+            padding-top: 30px;
+            height: 80vh;
+
+            h1{
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .timeline-wrapper{
+                // background-color: yellowgreen;
+                width: 95%;
+                height: 85%;
+                margin: auto;
+
+                #progress-bar{
+                    // background-color: rosybrown;
+                    width: 100%;
+                    margin: auto;
+                    height: 80px;
+                    position: relative;
+                    
+                    ul{
+                        z-index: 50;
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        // background-color: lightcoral;
+                        
+                        li{
+                            // background-color: sandybrown;
+                            list-style: none;
+                            width: 10%;
+                            font-size: 1.4em;
+                            font-weight: 600;
+                            padding: 10px;
+                            position: relative;
+                            cursor: pointer;
+
+                            // upper biger circles
+                            // &::before{
+                            //     content: '';
+                            //     display: block;
+                            //     width: 30px;
+                            //     height: 30px;
+                            //     margin: auto;
+                            //     background-color: white;
+                            //     border-radius: 50%;
+                            //     border: 2px solid black;
+                            //     box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.4);
+                            // }
+                            // lower smaller circles
+                            &::after{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                left: 50%;
+                                bottom: -50%;
+                                transform: translate(-50%, 0);
+                                width: 20px;
+                                height: 20px;
+                                background: rgb(182, 182, 182);
+                                border-radius: 50%;
+                                margin-top: 10px;
+                                box-shadow: 0 5px 15px -1px rgba(0, 0, 0, 0.4);
+                                border: 5px solid white;
+                                transition: all ease 0.3s;
+                            }
+                            // when li is hovered then after changes BG 
+                            &:hover::after{
+                                background-color: teal;
+                            }
+                        }
+                        .tl-active::after{
+                            background-color: teal;
+                        }
+                    }
+
+                    #line{
+                        background-color: lightgray;
+                        width: 60%;
+                        height: 8px;
+                        margin: auto;
+                        border-radius: 50px;
+                        position: absolute;
+                        left:50%;
+                        // top: 60%;
+                        bottom: 0;
+                        transform: translate(-50%, 0);  // to centre
+                        z-index: 1;
+                    }
+                }
+                #timeline-content-wrapper{
+                    width: 90%;
+                    height: 80%;
+                    margin: auto;
+                    padding: 30px;
+                    // background-color: khaki;
+
+                    .content-timeline{
+                        width: 70%;
+                        height: 90%;
+                        margin: auto;
+                        // background-color: lightblue;
+
+                        p{
+                            padding: 40px 80px;
+                            text-align: justify;
+                            font-size: 1.2em;
+                            background-color: lightgray;
+                            border-radius: 2em;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .gallery{
+            @include sample_headings;
+        }
+
+        .team{
+            @include sample_headings;
+        }
+
+        .spons{
+            @include sample_headings;
+        }
+    }   
+}

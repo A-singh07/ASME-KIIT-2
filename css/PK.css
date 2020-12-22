@@ -1,0 +1,35 @@
+.site-footer
+{
+  background-color:#c6ebc9;
+  font-size:15px;
+  color:#737373;
+}
+ hr
+{
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  margin: 0;
+}
+
+.site-footer h6
+{
+  color:#70af85;
+  font-size:16px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  padding-top: 30px;
+}
+.site-footer a
+{
+  color:#70af85;
+}
+div
+{
+  margin: 0;
+  padding: 0;
+}
+h6
+{
+  margin: 10;
+}
