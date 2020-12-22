@@ -1,5 +1,6 @@
 
 // for small dots to show active
+
 $(".step").click(function () {
     $(this).addClass("tl-active").prevAll().addClass("tl-active");
     $(this).nextAll().removeClass("tl-active");
