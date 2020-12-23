@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/eb59bb629c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -22,253 +20,279 @@
     <title>ASME-KIIT</title>
 </head>
 
-<body>
+<body onload="loaderTime()">
     <!-- Loader -->
-
-
-
-
+    <div id="loader-container">
+        <img src="./Assets/ASME-KIIT-logo.jpeg" class="logo">
+        <div class="object-1">
+            <img src="./Assets/recumbent-bike.png" alt="recumbent bike">
+        </div>
+        <div class="object-2">
+            <img src="./Assets/flag.png" alt="finish flag">
+        </div>
+        <div class="line">
+            <img src="./Assets/black-grass.webp">
+        </div>
+        <h2>Loading...</h2>
+    </div>
     <!-- XX---Loader---XX -->
 
-    <!-- Landing Page -->
+    <div id="mother-container">
 
-    <div class="landing-slider" id="home" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Landing Page -->
+        <div class="landing-slider" id="home" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" alt="First slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
+                        alt="Third slide">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="Third slide">
+            <div class="text-one">
+                <h1>
+                    ASME <br>
+                    KIIT
+                </h1>
             </div>
         </div>
-    </div>
-    <div class="text-one">
-        <h1>
-            ASME <br>
-            KIIT
-        </h1>
-    </div>
 
-    <!-- XX---Landing Page---XX -->
 
-    <!-- Side Nav -->
+        <!-- XX---Landing Page---XX -->
 
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-        <i class="fa fa-times-circle" aria-hidden="true" id="cancel_btn"></i>
-    </label>
-    <div class="sidebar">
-        <ul id="sidebar-ul">
-            <li><a href="#"><span id="a"><i class="fa fa-home" aria-hidden="true"></i></span><span
-                        id="c">Home</span></a></li>
-            <li><a href="#"><span id="a"><i class="fa fa-info-circle" aria-hidden="true"></i></span><span
-                        id="c">About</span></a></li>
-            <li><a href="#"><span id="a"><i class="fa fa-clock" aria-hidden="true"></i></span><span
-                        id="c">Timeline</span></a></li>
-            <li><a href="#"><span id="a"><i class="fa fa-users" aria-hidden="true"></i></span><span
-                        id="c">Team</span></a></li>
-            <li><a href="#"><span id="a"><i class="fa fa-camera" aria-hidden="true"></i></span><span
-                        id="c">Gallery</span></a></li>
-            <li><a href="#"><span id="a"><i class="fa fa-handshake" aria-hidden="true"></i></span><span
-                        id="c">Sponsors</span></a></li>
-            <li><a href="#"><span id="a"><i class="fa fa-id-card" aria-hidden="true"></i></span><span
-                        id="c">Contact</span></a></li>
-        </ul>
-    </div>
+        <!-- Side Nav -->
 
-    <!-- XX---Side Nav---XX -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+            <i class="fa fa-times-circle" aria-hidden="true" id="cancel_btn"></i>
+        </label>
+        <div class="sidebar">
+            <ul id="sidebar-ul">
+                <li><a href="#"><span id="a"><i class="fa fa-home" aria-hidden="true"></i></span><span
+                            id="c">Home</span></a></li>
+                <li><a href="#"><span id="a"><i class="fa fa-info-circle" aria-hidden="true"></i></span><span
+                            id="c">About</span></a></li>
+                <li><a href="#"><span id="a"><i class="fa fa-clock" aria-hidden="true"></i></span><span
+                            id="c">Timeline</span></a></li>
+                <li><a href="#"><span id="a"><i class="fa fa-users" aria-hidden="true"></i></span><span
+                            id="c">Team</span></a></li>
+                <li><a href="#"><span id="a"><i class="fa fa-camera" aria-hidden="true"></i></span><span
+                            id="c">Gallery</span></a></li>
+                <li><a href="#"><span id="a"><i class="fa fa-handshake" aria-hidden="true"></i></span><span
+                            id="c">Sponsors</span></a></li>
+                <li><a href="#"><span id="a"><i class="fa fa-id-card" aria-hidden="true"></i></span><span
+                            id="c">Contact</span></a></li>
+            </ul>
+        </div>
 
-    <!-- ------- Main section of the Page---------- -->
-    <section>
-        <div class="main-container">
-            <!-- About -->
-            <div class="about" id="about">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas blanditiis accusamus fugit?
-                    Ratione
-                    repellendus officia magnam iure aut tenetur neque voluptate blanditiis necessitatibus, qui est
-                    provident
-                    asperiores numquam voluptas porro explicabo dolorem. Fuga, maiores ratione. Distinctio, placeat
-                    mollitia
-                    ipsam sed dolorem neque suscipit illum natus error recusandae corrupti, aliquid expedita, eius
-                    pariatur
-                    quo incidunt! Et dignissimos est fugit, obcaecati quam odio ducimus velit unde quis consequuntur
-                    necessitatibus aperiam omnis soluta?</p>
+        <!-- XX---Side Nav---XX -->
+
+        <!-- ------- Main section of the Page---------- -->
+        <section>
+
+            <div class="main-container">
+                <!-- About -->
+                <div class="about" id="about">
+                    <h1>About</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas blanditiis accusamus fugit?
+                        Ratione
+                        repellendus officia magnam iure aut tenetur neque voluptate blanditiis necessitatibus, qui est
+                        provident
+                        asperiores numquam voluptas porro explicabo dolorem. Fuga, maiores ratione. Distinctio, placeat
+                        mollitia
+                        ipsam sed dolorem neque suscipit illum natus error recusandae corrupti, aliquid expedita, eius
+                        pariatur
+                        quo incidunt! Et dignissimos est fugit, obcaecati quam odio ducimus velit unde quis consequuntur
+                        necessitatibus aperiam omnis soluta?</p>
+                </div>
+                <!-- XX---About---XX -->
+
+                <!-- Timeline -->
+                <div class="timeline" id="timeline">
+                    <h1>Timeline</h1>
+                    <br>
+                    <div class="timeline-wrapper">
+                        <div id="progress-bar">
+                            <ul>
+                                <li class="step tl-active" onclick="activeFunc('1')">
+                                    <div class="step-inner">2014</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('2')">
+                                    <div class="step-inner">2015</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('3')">
+                                    <div class="step-inner">2016</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('4')">
+                                    <div class="step-inner">2017</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('5')">
+                                    <div class="step-inner">2018</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('6')">
+                                    <div class="step-inner">2019</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('7')">
+                                    <div class="step-inner">2020</div>
+                                </li>
+                            </ul>
+
+                            <div id="line">
+                                <div id="progress-line"></div>
+                            </div>
+                        </div>
+
+                        <div id="timeline-content-wrapper">
+                            <div class="content-timeline content1">
+                                <p>SLIDE_1....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                    neque
+                                    quae alias
+                                    asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente
+                                    adipisci
+                                    id perferendis quas saepe. Commodi, incidunt corrupti!</p>
+                            </div>
+                            <div class="content-timeline content2">
+                                <p>SLIDE_2..... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+                                    tenetur in
+                                    sequi ipsam labore voluptates nulla maiores odio nostrum vitae qui vero consectetur
+                                    dolorum, aliquam animi reprehenderit quis. Quidem, deleniti.</p>
+                            </div>
+                            <div class="content-timeline content3">
+                                <p>SLIDE_3.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                    neque quae alias
+                                    asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente
+                                    adipisci
+                                    id perferendis quas saepe. Commodi, incidunt corrupti!</p>
+                            </div>
+                            <div class="content-timeline content4">
+                                <p>SLIDE_4.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                    neque quae alias
+                                    asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente
+                                    adipisci
+                                    id perferendis quas saepe. Commodi, incidunt corrupti!</p>
+                            </div>
+                            <div class="content-timeline content5">
+                                <p>SLIDE_5.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                    neque quae alias
+                                    asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente
+                                    adipisci
+                                    id perferendis quas saepe. Commodi, incidunt corrupti!</p>
+                            </div>
+                            <div class="content-timeline content6">
+                                <p>SLIDE_6.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                    neque quae alias
+                                    asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente
+                                    adipisci
+                                    id perferendis quas saepe. Commodi, incidunt corrupti!</p>
+                            </div>
+                            <div class="content-timeline content7  cnt-active">
+                                <p>SLIDE_7.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                    neque quae alias
+                                    asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente
+                                    adipisci
+                                    id perferendis quas saepe. Commodi, incidunt corrupti!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- XX---Timeline---XX -->
+
+                <!-- Gallery -->
+                <div class="gallery" id="gallery">
+                    <h1>Gallery</h1>
+                    <div></div>
+
+
+
+                </div>
+                <!-- XX---Gallery---XX -->
+
+                <!-- ----- Our Team ----- -->
+
+                <div class="team" id="team">
+                    <h1>Our Team</h1>
+                    <div></div>
+
+
+
+                </div>
+
+                <!-- XX----- Our Team -----XX -->
+
+                <!-- Sponsors&Partners -->
+                <div class="spons" id="spons">
+                    <h1>Sponsors & Partners</h1>
+                    <div></div>
+
+
+
+                </div>
+                <!-- XX---Sponsors&Partners---XX -->
             </div>
-            <!-- XX---About---XX -->
+        </section>
 
-            <!-- Timeline -->
-            <div class="timeline" id="timeline">
-                <h1>Timeline</h1>
-                <br>
-                <div class="timeline-wrapper">
-                    <div id="progress-bar">
+        <!-- ------XX------ Main section of the Page ------XX------ -->
+
+        <!-- Footers -->
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+
+                        <img src="./Assets/asme.png" alt="Asme Kiit Logo" style="height: 100px;width:140px;float:left;">
+
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <h6>REACH OUT TO US</h6>
+                        <img src="Assets/instagram.png" style="height:40px;width:40px ;margin:10px;float:left">
+                        <img src="Assets/linkedin.png " style="height:40px;width:40px;margin:10px;float:left">
+                        <img src="Assets/gmail.png " style="height:40px;width:40px;margin:10px;float:left">
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <h6>Website Designed By</h6>
                         <ul>
-                            <li class="step tl-active" onclick="activeFunc('1')">
-                                <div class="step-inner">2014</div>
-                            </li>
-                            <li class="step tl-active" onclick="activeFunc('2')">
-                                <div class="step-inner">2015</div>
-                            </li>
-                            <li class="step tl-active" onclick="activeFunc('3')">
-                                <div class="step-inner">2016</div>
-                            </li>
-                            <li class="step tl-active" onclick="activeFunc('4')">
-                                <div class="step-inner">2017</div>
-                            </li>
-                            <li class="step tl-active" onclick="activeFunc('5')">
-                                <div class="step-inner">2018</div>
-                            </li>
-                            <li class="step tl-active" onclick="activeFunc('6')">
-                                <div class="step-inner">2019</div>
-                            </li>
-                            <li class="step tl-active" onclick="activeFunc('7')">
-                                <div class="step-inner">2020</div>
-                            </li>
+                            <li>Aman Singh</li>
+                            <li>Priyanshu Kakkad</li>
+                            <li>Utkarsh Keerti</li>
                         </ul>
-
-                        <div id="line">
-                            <div id="progress-line"></div>
-                        </div>
-                    </div>
-
-                    <div id="timeline-content-wrapper">
-                        <div class="content-timeline content1">
-                            <p>SLIDE_1....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque
-                                quae alias
-                                asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente adipisci
-                                id perferendis quas saepe. Commodi, incidunt corrupti!</p>
-                        </div>
-                        <div class="content-timeline content2">
-                            <p>SLIDE_2..... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid tenetur in
-                                sequi ipsam labore voluptates nulla maiores odio nostrum vitae qui vero consectetur
-                                dolorum, aliquam animi reprehenderit quis. Quidem, deleniti.</p>
-                        </div>
-                        <div class="content-timeline content3">
-                            <p>SLIDE_3.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                neque quae alias
-                                asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente adipisci
-                                id perferendis quas saepe. Commodi, incidunt corrupti!</p>
-                        </div>
-                        <div class="content-timeline content4">
-                            <p>SLIDE_4.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                neque quae alias
-                                asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente adipisci
-                                id perferendis quas saepe. Commodi, incidunt corrupti!</p>
-                        </div>
-                        <div class="content-timeline content5">
-                            <p>SLIDE_5.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                neque quae alias
-                                asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente adipisci
-                                id perferendis quas saepe. Commodi, incidunt corrupti!</p>
-                        </div>
-                        <div class="content-timeline content6">
-                            <p>SLIDE_6.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                neque quae alias
-                                asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente adipisci
-                                id perferendis quas saepe. Commodi, incidunt corrupti!</p>
-                        </div>
-                        <div class="content-timeline content7  cnt-active">
-                            <p>SLIDE_7.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                neque quae alias
-                                asperiores, nemo dolor eveniet rem delectus fugit incidunt accusamus sapiente adipisci
-                                id perferendis quas saepe. Commodi, incidunt corrupti!</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- XX---Timeline---XX -->
-
-            <!-- Gallery -->
-            <div class="gallery" id="gallery">
-                <h1>Gallery</h1>
-                <div></div>
-
-
-
-            </div>
-            <!-- XX---Gallery---XX -->
-
-            <!-- ----- Our Team ----- -->
-
-            <div class="team" id="team">
-                <h1>Our Team</h1>
-                <div></div>
-
-
-
-            </div>
-
-            <!-- XX----- Our Team -----XX -->
-
-            <!-- Sponsors&Partners -->
-            <div class="spons" id="spons">
-                <h1>Sponsors & Partners</h1>
-                <div></div>
-
-
-
-            </div>
-            <!-- XX---Sponsors&Partners---XX -->
-        </div>
-    </section>
-    <!-- ------XX------ Main section of the Page ------XX------ -->
-
-    <!-- Footers -->
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-
-                    <img src="./Assets/asme.png" alt="Asme Kiit Logo" style="height: 100px;width:140px;float:left;">
-
-                </div>
-
-                <div class="col-xs-12 col-md-4">
-                    <h6>REACH OUT TO US</h6>
-                    <img src="Assets/instagram.png" style="height:40px;width:40px ;margin:10px;float:left">
-                    <img src="Assets/linkedin.png " style="height:40px;width:40px;margin:10px;float:left">
-                    <img src="Assets/gmail.png " style="height:40px;width:40px;margin:10px;float:left">
-                </div>
-
-                <div class="col-xs-12 col-md-4">
-                    <h6>Website Designed By</h6>
-                    <ul>
-                        <li>Aman Singh</li>
-                        <li>Priyanshu Kakkad</li>
-                        <li>Utkarsh Keerti</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div class="container">
-            <div class="row" ;>
-                <div class="col-md-12 col-sm-6 col-xs-12">
-                    <div class="text-center p-3">
-                        © 2020 Copyright:
-                        <a>ASME KIIT </a>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-
                     </div>
                 </div>
+                <hr>
             </div>
-    </footer>
+
+            <div class="container">
+                <div class="row" ;>
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <div class="text-center p-3">
+                            © 2020 Copyright:
+                            <a>ASME KIIT </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+
+                        </div>
+                    </div>
+                </div>
+        </footer>
 
 
-    <!-- XX---Footer---XX -->
+        <!-- XX---Footer---XX -->
+
+    </div>
 
     <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -1,6 +1,13 @@
+// Loader
+function loaderTime() {
+    setTimeout(showpage, 5000);
+}
+function showpage() {
+    $("#loader-container").css("display", "none");
+    $("#mother-container").css("display", "block");
+}
 
 // for small dots to show active
-
 $(".step").click(function () {
     $(this).addClass("tl-active").prevAll().addClass("tl-active");
     $(this).nextAll().removeClass("tl-active");
