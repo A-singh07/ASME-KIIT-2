@@ -20,9 +20,9 @@
     <title>ASME-KIIT</title>
 </head>
 
-<body onload="loaderTime()">
+<body>
     <!-- Loader -->
-    <div id="loader-container">
+    <!-- <div id="loader-container">
         <img src="./Assets/ASME-KIIT-logo.jpeg" class="logo">
         <div class="object-1">
             <img src="./Assets/recumbent-bike.png" alt="recumbent bike">
@@ -34,7 +34,7 @@
             <img src="./Assets/black-grass.webp">
         </div>
         <h2>Loading...</h2>
-    </div>
+    </div> -->
     <!-- XX---Loader---XX -->
 
     <div id="mother-container">
@@ -69,27 +69,33 @@
 
         <!-- Side Nav -->
 
-        <input type="checkbox" id="check">
+        <!-- <input type="checkbox" id="check">
         <label for="check">
             <i class="fas fa-bars" id="sidebar_btn"></i>
             <i class="fa fa-times-circle" aria-hidden="true" id="cancel_btn"></i>
-        </label>
+        </label> -->
+        <div id="nav">
+            <i id="hamburger" class="fas fa-bars"></i>
+            <i id="nav-close" class="fa fa-times-circle"></i>
+        </div>
         <div class="sidebar">
-            <ul id="sidebar-ul">
-                <li><a href="#"><span id="a"><i class="fa fa-home" aria-hidden="true"></i></span><span
-                            id="c">Home</span></a></li>
-                <li><a href="#"><span id="a"><i class="fa fa-info-circle" aria-hidden="true"></i></span><span
-                            id="c">About</span></a></li>
-                <li><a href="#"><span id="a"><i class="fa fa-clock" aria-hidden="true"></i></span><span
-                            id="c">Timeline</span></a></li>
-                <li><a href="#"><span id="a"><i class="fa fa-users" aria-hidden="true"></i></span><span
-                            id="c">Team</span></a></li>
-                <li><a href="#"><span id="a"><i class="fa fa-camera" aria-hidden="true"></i></span><span
-                            id="c">Gallery</span></a></li>
-                <li><a href="#"><span id="a"><i class="fa fa-handshake" aria-hidden="true"></i></span><span
-                            id="c">Sponsors</span></a></li>
-                <li><a href="#"><span id="a"><i class="fa fa-id-card" aria-hidden="true"></i></span><span
-                            id="c">Contact</span></a></li>
+            <ul>
+                <li><a class="nav-link" href="#home"><i class="fa fa-home"></i><span class="nav-text">Home</span></a>
+                </li>
+                <li><a class="nav-link" href="#about"><i class="fa fa-info-circle"></i><span
+                            class="nav-text">About</span></a></li>
+                <li><a class="nav-link" href="#achivements"><i class="fa fa-trophy"></i><span
+                            class="nav-text">Achivements</span></a>
+                </li>
+                <li><a class="nav-link" href="#team"><i class="fa fa-users"></i><span class="nav-text">Team</span></a>
+                </li>
+                <li><a class="nav-link" href="#gallery"><i class="fa fa-camera"></i><span
+                            class="nav-text">Gallery</span></a>
+                </li>
+                <li><a class="nav-link" href="#sponsors"><i class="fa fa-handshake"></i><span
+                            class="nav-text">Sponsors</span></a></li>
+                <li><a class="nav-link" href="#contact"><i class="fa fa-id-card"></i><span
+                            class="nav-text">Contact</span></a></li>
             </ul>
         </div>
 
@@ -116,8 +122,8 @@
                 <!-- XX---About---XX -->
 
                 <!-- Timeline -->
-                <div class="timeline" id="timeline">
-                    <h1>Timeline</h1>
+                <div class="timeline" id="achivements">
+                    <h1>Achivements</h1>
                     <br>
                     <div class="timeline-wrapper">
                         <div id="progress-bar">
@@ -231,7 +237,7 @@
                 <!-- XX----- Our Team -----XX -->
 
                 <!-- Sponsors&Partners -->
-                <div class="spons" id="spons">
+                <div class="sponsors" id="sponsors">
                     <h1>Sponsors & Partners</h1>
                     <div></div>
 

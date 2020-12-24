@@ -30,7 +30,7 @@
         left: 0;
         top: 43%;
         padding: 10px;
-        animation: move-object 5s ease-in-out;
+        animation: move-object 5.7s ease-in-out;
         // background-color: teal;
 
         img{
@@ -98,8 +98,8 @@
 }
 
 #mother-container{
-    display: none;
-    animation: animate-up 2s ease-out;
+    // display: none;
+    // animation: animate-up 2s ease-out;
 
     section{
         background-color: rgba(255, 228, 196, 0.842);
@@ -278,7 +278,7 @@
                 @include sample_headings;
             }
 
-            .spons{
+            .sponsors{
                 @include sample_headings;
             }
         } 
