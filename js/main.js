@@ -18,12 +18,12 @@ var nav_close = $("#nav #nav-close");
 
 $("#hamburger").click(function () {
 
-    $(".sidebar").animate({ width: '180px' }, 300, function () {
+    $(".sidebar").animate({ width: '250px' }, 300, function () {
         sidebar_span.css("display", "inline");
         nav_ham.hide();
         nav_close.show();
     });
-    nav.animate({ width: '180px' }, 300);
+    nav.animate({ width: '250px' }, 300);
     sidebar_i.css("width", "30%");
 
 });

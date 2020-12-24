@@ -1,8 +1,34 @@
-// Color Palletes
+// This file is meant to modify color themes and fonts.
+// All the variables are declared in "resources.scss".
 
 
+body{
+    font-family: $font1;
+}
 
-// FONTS
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+#nav{
+    background-color: $nav_top;
 
-$font-type1: 'Quicksand', sans-serif;
+    #hamburger{
+        color: $ham_close;
+    }
+    #nav-close{
+        color: $ham_close;
+    }
+}
+.sidebar{
+    background-color: $sidebar;
+
+    li:hover{
+        background-color: $nav_hover;
+    }
+}
+
+section{
+    background-color: $bg_section;
+}
+
+
+.site-footer{
+    background-color: $footer;
+}
