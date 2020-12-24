@@ -81,7 +81,6 @@
     width: 70px;
     height: 100vh;
     z-index: 900;
-    /* transition: width 1s ease; */
 }
 
 .sidebar ul
@@ -101,7 +100,6 @@
 .sidebar ul li
 {
     width: 100%;
-    /* cursor: pointer; */
     padding: 10px 0;
     transition: 0.3s ease;
     /* background-color: blueviolet; */
@@ -132,69 +130,3 @@
 .sidebar ul li:hover{
     background-color: khaki;
 }
-
-/* .sidebar ul li #a
-{
-    margin: 5px;
-    padding-left: 7px;
-    font-size: 25px;
-    color: black;
-    transition: 0.5s ease;
-}
-
-.sidebar ul li #c
-{
-    opacity: 0;
-    transition: 1s ease;
-}
-
-#check:checked ~.sidebar
-{
-    width: 200px;
-}
-
-#check:checked ~.sidebar ul li
-{
-    width: 200px;
-}
-
-#check:checked ~.sidebar ul li #c
-{
-    opacity: 1;
-    font-size: 20px;
-    color: black;
-}
-
-#check:checked ~.sidebar ul li:hover
-{
-    background-color: blanchedalmond;
-}
-
-#check:checked ~label #sidebar_btn
-{
-    left: 250px;
-    opacity: 0;
-}
-
-.sidebar ul li #a:hover
-{
-    font-size: 30px;
-}
-
-label #cancel_btn
-{
-    left: 70px;
-    opacity: 0;
-}
-
-#check:checked ~label #cancel_btn
-{
-    opacity: 1;
-    visibility: visible;
-    left: 250px;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    font-size: 30px;
-    transition: left 1s ease;
-} */

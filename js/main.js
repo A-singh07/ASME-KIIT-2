@@ -9,6 +9,7 @@ function showpage() {
 
 
 // NAVBAR
+
 var sidebar_i = $(".sidebar li i");
 var sidebar_span = $(".sidebar li span");
 var nav = $("#nav");
@@ -39,6 +40,7 @@ $("#nav-close").click(function () {
     });
 });
 
+// TIMELINE
 
 // for small dots to show active
 $(".step").click(function () {
