@@ -26,6 +26,25 @@ body{
 
 section{
     background-color: $bg_section;
+
+    .main-container{
+
+        .gallery{
+            @include headings;
+        }
+
+        .team{
+            @include headings;
+        }
+
+        .sponsors{
+            @include headings;
+
+            .sponsors-wrapper{
+                background-color: $bg_section;
+            }
+        }
+    }
 }
 
 

@@ -1,19 +1,10 @@
-@mixin sample_headings {
-    height: 70vh;
-    // margin: 50px 0;
-    background-color: white;
+@mixin headings {
+    padding-top: 30px;
+    height: 80vh;
 
     h1{
         text-align: center;
         font-weight: 500;
-        margin-top: 50px;
-    }
-    
-    div{
-        // background-color: aquamarine;
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
     }
 }
 
