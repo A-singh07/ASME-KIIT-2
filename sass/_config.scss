@@ -29,16 +29,16 @@ section{
 
     .main-container{
 
-        .gallery{
-            @include headings;
+        #gallery{
+            @include sections_headings;
         }
 
-        .team{
-            @include headings;
+        #team{
+            @include sections_headings;
         }
 
-        .sponsors{
-            @include headings;
+        #sponsors{
+            @include sections_headings;
 
             .sponsors-wrapper{
                 background-color: $bg_section;

@@ -121,7 +121,7 @@
 
             .timeline{
                 // background-color: yellow;
-                @include headings;
+                @include sections_headings;
 
                 .timeline-wrapper{
                     // background-color: yellowgreen;

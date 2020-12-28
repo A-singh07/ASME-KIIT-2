@@ -66,3 +66,40 @@ function activeFunc(step) {
     $(".content" + step).addClass("cnt-active");
 
 }
+
+
+//OUR TEAM
+
+$(".tabs").click(function () {
+    $(this).prevAll().removeClass("tab-active");
+    $(this).nextAll().removeClass("tab-active");
+    $(this).addClass("tab-active");
+});
+
+function activeCont(cont) {
+    $(".t-content").removeClass("t-content-active");
+    $("#" + cont).addClass("t-content-active");
+}
+
+
+// GALLERY
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+    }
+
+});

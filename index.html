@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/mdb.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
+    <!--Swiper.css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="./css/UK.css">
     <link rel="stylesheet" href="./css/AS.css">
@@ -182,11 +185,19 @@
                 <!-- XX---Timeline---XX -->
 
                 <!-- Gallery -->
-                <div class="gallery" id="gallery">
+                <div class="swiper-container" id="gallery">
                     <h1>Gallery</h1>
-                    <div></div>
-
-
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                    </div>
 
                 </div>
                 <!-- XX---Gallery---XX -->
@@ -195,12 +206,373 @@
 
                 <div class="team" id="team">
                     <h1>Our Team</h1>
-                    <div></div>
+                    <div class="tab-wrap">
+                        <button class="tabs tab-active" id="t-1" onclick="activeCont('tc-1')">All</button>
+                        <button class="tabs" id="t-2" onclick="activeCont('tc-2')">Manufacturing</button>
+                        <button class="tabs" id="t-3" onclick="activeCont('tc-3')">Marketting</button>
+                        <button class="tabs" id="t-4" onclick="activeCont('tc-4')">Design and Design Report</button>
+                        <button class="tabs" id="t-5" onclick="activeCont('tc-5')">Riding</button>
+                    </div>
+
+                    <div class="content-container">
+                        <div class="t-content t-content-active" id="tc-1">
+
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row2">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="t-content" id="tc-2">
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
 
 
+                        <div class="t-content" id="tc-3">
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="t-content" id="tc-4">
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="t-content" id="tc-5">
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean2.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean3.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <img src="Assets/ocean.jpg" alt="">
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- XX --- content container ---XX  -->
+                    </div>
 
                 </div>
-
                 <!-- XX----- Our Team -----XX -->
 
                 <!-- Sponsors&Partners -->
@@ -292,6 +664,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!--Swiper.js-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Custom JS File -->
     <script src="js/main.js"></script>

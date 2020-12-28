@@ -129,3 +129,163 @@
     padding: 5px;
     /* background-color: chartreuse; */
 }
+
+
+/* -------- GALLERY --------- */
+
+.swiper-container
+{
+    background-color: khaki;
+}
+
+.swiper-container .swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.swiper-container .swiper-slide img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---- OUR TEAM ----- */
+
+.team
+{
+    height: 80vh;
+    width: 95%;
+    margin-bottom: 200px;
+}
+
+.team h1
+{
+    text-align: center;
+}
+
+.content-container
+{
+    width: 95%;
+    overflow: auto;
+    height: 100%;
+    margin: auto;
+    margin-left: 75px;
+    background-color: gray;
+}
+
+.tab-wrap
+{
+    text-align: center;
+    height: 60px;
+    margin-top: 70px;
+}
+
+.tab-wrap button
+{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s ease;
+}
+
+.tabs
+{
+    background-color: pink;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.tab-wrap button:hover 
+{
+    background-color: rgb(231, 138, 153);
+}
+
+.t-content
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.row2
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.row span
+{
+    width: 100%;
+}
+
+.row2 span
+{
+    width: 100%;
+}
+
+.row span img
+{
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 3px;
+}
+
+.row2 span img
+{
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 3px;
+}
+
+.row span h5
+{
+    text-align: center;
+    padding: 15px;
+}
+
+.row2 span:first-child
+{
+    text-align: right;
+}
+
+.row2 span:last-child
+{
+    text-align: left;
+}
+
+.row2 span:first-child h5
+{
+    margin-right: 40px;
+}
+
+.row2 span:last-child h5
+{
+    margin-left: 40px;
+}
+
+.tab-active
+{
+    background-color:palevioletred;
+}
+
+.t-content-active
+{
+    display: block;
+}
+
