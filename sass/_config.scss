@@ -1,7 +1,6 @@
 // This file is meant to modify color themes and fonts.
 // All the variables are declared in "resources.scss".
 
-
 body{
     font-family: $font1;
 }
@@ -28,17 +27,15 @@ section{
     background-color: $bg_section;
 
     .main-container{
+        #achivements{
+            @include sections_headings;
+        }
 
         #gallery{
             @include sections_headings;
         }
 
-        #team{
-            @include sections_headings;
-        }
-
         #sponsors{
-            @include sections_headings;
 
             .sponsors-wrapper{
                 background-color: $bg_section;

@@ -1,21 +1,11 @@
 /* ------ Color Themes ------ */
 
-//Sourthern_Comfort:-
-
-// $bg_section: #fcfaf0;  // light-creme
-
-// $nav_top:#8f795f;
-// $ham_close: white;
-// $sidebar: #f5dfba;
-// $nav_hover: #f5d091;
-
-// $footer: #c5f0c5;
-
-
 
 // Linen Pallet:-
 
-$bg_section: #f8eee4;  // light-creme2
+// $bg_section: #f8eee4;  // light-creme2
+$bg_section: white;
+$main_container: white;
 
 $nav_top:#879eaa;
 $ham_close: white;
@@ -25,9 +15,26 @@ $nav_hover: #d4d4d4;
 $footer: #c5f0c5;
 
 
-
 /* ------- FONTS -------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 $font1: 'Quicksand', sans-serif;
+
+
+/* ------- Responsive layout ------- */
+
+// Breakpoints
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";

@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+hr
+{
+border-style: none;
+border-top: 10px dotted #76c2c9;
+width: 20%;
+margin: auto;
+}
+
 #loader-container{
     width: 100vw;
     height: 100vh;
@@ -84,50 +92,53 @@
 
     section{
         background-size: cover;
-        padding: 0 180px;
+        // padding: 0 180px;
 
         .main-container{
-            background-color:white;
-            box-shadow: 2px 0px 20px rgba(71, 71, 71, 0.5);
+            background-color:$main_container;
+            // box-shadow: 2px 0px 20px rgba(71, 71, 71, 0.5);
             height: 100%;
+            margin: 0 15%;
             padding-bottom: 100px;
 
             .about{
                 // background-color: lightcoral;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 30px;
-        
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                padding: 20px;
+                margin-bottom: 50px;
+
+
                 h1{
                     // background-color: cadetblue;
-                    padding: 20px;
+                    align-self: center;
+                    justify-self: center;
                     font-size: 4em;
-                    margin: 0 0 0 70px;
                     font-weight: 600;
+                    padding: 20px;
                 }
         
                 p{
                     // background-color: burlywood;
-                    width: 700px;
-                    margin-left: auto;
-                    margin-right: 10px;
-                    padding: 20px;
+                    align-self: center;
+                    justify-self: center;
                     font-size: 1.1em;
                     text-align: justify;
                     font-weight: 500;
+                    padding: 6%;
                 }
             }
 
             .timeline{
                 // background-color: yellow;
-                @include sections_headings;
+                margin-bottom: 10px;
 
                 .timeline-wrapper{
                     // background-color: yellowgreen;
                     width: 95%;
                     height: 85%;
                     margin: auto;
+                    padding-top: 5%;
 
                     #progress-bar{
                         // background-color: rosybrown;
@@ -211,12 +222,12 @@
                         width: 90%;
                         height: 80%;
                         margin: auto;
-                        padding: 30px;
+                        padding: 5%;
                         // background-color: khaki;
 
                         .content-timeline{
                             display: none;
-                            width: 60%;
+                            width: 55%;
                             height: 60%;
                             margin: auto;
                             margin-bottom: 30px;
@@ -226,9 +237,9 @@
                             p{
                                 width: 100%;
                                 height: 100%;
-                                padding: 40px 80px;
+                                padding: 10px;
                                 text-align: center;
-                                font-size: 1.2em;
+                                font-size: 1.5rem;
                                 // background-color: lemonchiffon;
                             }
                         }
