@@ -1,15 +1,29 @@
-@import 'snips';
 @import 'resources';
+@import 'snips';
 @import 'config';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-hr
-{
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $scroll_thumb;
+    border-radius: 5em;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: $scroll_thumb_hover;
+}
+
+hr{
 border-style: none;
 border-top: 10px dotted #76c2c9;
 width: 20%;
@@ -76,7 +90,6 @@ margin: auto;
         }
     }
     h2{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         position: absolute;
         left: 50%;
         top: 60%;
@@ -95,11 +108,10 @@ margin: auto;
         // padding: 0 180px;
 
         .main-container{
-            background-color:$main_container;
+            background-color: $main_container;
             // box-shadow: 2px 0px 20px rgba(71, 71, 71, 0.5);
             height: 100%;
             margin: 0 15%;
-            padding-bottom: 100px;
 
             .about{
                 // background-color: lightcoral;
@@ -131,14 +143,17 @@ margin: auto;
 
             .timeline{
                 // background-color: yellow;
-                margin-bottom: 10px;
+                padding-top: 80px;
+                padding-bottom: 30px;
 
                 .timeline-wrapper{
                     // background-color: yellowgreen;
                     width: 95%;
                     height: 85%;
                     margin: auto;
-                    padding-top: 5%;
+                    padding-top: 5%;                  
+                    border-radius: 3em;
+                    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.3) inset;
 
                     #progress-bar{
                         // background-color: rosybrown;
@@ -185,11 +200,11 @@ margin: auto;
                                     transition: all ease 0.3s;
                                 }
                                 &:hover::after{
-                                    background-color: teal;
+                                    background-color: $step_hover;
                                 }
                             }
                             .tl-active::after{
-                                background-color: teal;
+                                background-color: $step_active;
                             }
                         }
 
@@ -209,8 +224,7 @@ margin: auto;
                             #progress-line{
                                 width: 100%;
                                 height: 100%;
-                                // background-color: teal;
-                                background: linear-gradient(to right, teal 0%, #4fdf8b 100%);
+                                background: $progress_line;
                                 border-radius: 50px;
                                 max-width: 100%;  // Imp prop.
                                 transition: all ease 0.9s;

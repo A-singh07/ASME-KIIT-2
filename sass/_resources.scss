@@ -4,18 +4,35 @@
 // Linen Pallet:-
 
 // $bg_section: #f8eee4;  // light-creme2
-$bg_section: white;
+$bg_section: #eefbff;
 $main_container: white;
+$scroll_thumb: rgb(187, 187, 187);
+$scroll_thumb_hover: rgb(163, 163, 163);
 
-$nav_top:#879eaa;
+$nav_top:#769fcd;
 $ham_close: white;
-$sidebar: #e7e7e7;
-$nav_hover: #d4d4d4;
+$sidebar: #d6e6f2;
+$nav_hover: #bae8e8;
 
-$footer: #c5f0c5;
+$progress_line: linear-gradient(to right, teal 0%, #4fdf8b 100%);
+$step_active: teal;
+$step_hover: teal;
+
+$team_tabs: #d6e6f2;
+$team_tabs_hover: #769fcd;
+$team_tab_active:#769fcd;
+
+$footer: #272343;
 
 
 /* ------- FONTS -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+$font_landing: 'Red Hat Display', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 

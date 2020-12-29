@@ -6,9 +6,8 @@
 .sponsors{
   width: 100%;
   /* height: 60vh; */
-  padding-top: 30px;
-  padding-bottom: 20px;
-  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 10px;
   /* background-color: aqua; */
 }
 .sponsors h1{
@@ -20,10 +19,10 @@
   width: 95%;
   height: 85%;
   display: grid;
-  margin: 30px auto;
+  margin: 50px auto;
   padding: 30px;
   overflow: auto;
-  border-radius: 50px;
+  border-radius: 3em;
   box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.3) inset;
 }
 

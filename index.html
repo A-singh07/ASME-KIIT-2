@@ -16,6 +16,9 @@
     <!--Swiper.css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="./css/UK.css">
     <link rel="stylesheet" href="./css/AS.css">
@@ -60,10 +63,10 @@
                 </div>
             </div>
             <div class="text-one">
-                <h1>
+                <p>
                     ASME <br>
                     KIIT
-                </h1>
+                </p>
             </div>
         </div>
 
@@ -85,10 +88,10 @@
                 <li><a class="nav-link" href="#achivements"><i class="fa fa-trophy"></i><span
                             class="nav-text">Achivements</span></a>
                 </li>
-                <li><a class="nav-link" href="#team"><i class="fa fa-users"></i><span class="nav-text">Team</span></a>
-                </li>
                 <li><a class="nav-link" href="#gallery"><i class="fa fa-camera"></i><span
                             class="nav-text">Gallery</span></a>
+                </li>
+                <li><a class="nav-link" href="#team"><i class="fa fa-users"></i><span class="nav-text">Team</span></a>
                 </li>
                 <li><a class="nav-link" href="#sponsors"><i class="fa fa-handshake"></i><span
                             class="nav-text">Sponsors</span></a></li>
@@ -105,8 +108,10 @@
             <div class="main-container">
                 <!-- About -->
                 <div class="about" id="about">
-                    <h1>About</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas blanditiis accusamus fugit?
+                    <h1 data-aos="fade-right" data-aos-duration="1500">About</h1>
+                    <p data-aos="fade-left" data-aos-duration="1500">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptas
+                        blanditiis accusamus fugit?
                         Ratione
                         repellendus officia magnam iure aut tenetur neque voluptate blanditiis necessitatibus, qui est
                         provident
@@ -155,7 +160,7 @@
                             </div>
                         </div>
 
-                        <div id="timeline-content-wrapper">
+                        <div id="timeline-content-wrapper" data-aos="zoom-in-up" data-aos-duration="1500">
                             <div class="content-timeline content1">
                                 <p>3rd in Design <br>2nd in Drag</p>
                             </div>
@@ -183,22 +188,23 @@
                     </div>
 
                 </div>
-                <hr>
                 <!-- XX---Timeline---XX -->
 
                 <!-- Gallery -->
-                <div class="swiper-container" id="gallery">
+                <div class="gallery" id="gallery">
                     <h1>Gallery</h1>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                        </div>
                     </div>
 
                 </div>
@@ -609,7 +615,7 @@
 
         <!-- Footers -->
 
-        <footer class="site-footer">
+        <footer class="site-footer" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
@@ -638,7 +644,7 @@
             </div>
 
             <div class="container">
-                <div class="row" ;>
+                <div class="row">
                     <div class="col-md-12 col-sm-6 col-xs-12">
                         <div class="text-center p-3">
                             © 2020 Copyright:
@@ -671,6 +677,12 @@
 
     <!--Swiper.js-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Custom JS File -->
     <script src="js/main.js"></script>

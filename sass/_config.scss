@@ -4,7 +4,9 @@
 body{
     font-family: $font1;
 }
-
+.landing-slider{
+    font-family: $font_landing;
+}
 #nav{
     background-color: $nav_top;
 
@@ -27,12 +29,39 @@ section{
     background-color: $bg_section;
 
     .main-container{
+
         #achivements{
             @include sections_headings;
+
+            .timeline-wrapper{
+                background-color: $bg_section;
+            }
+
         }
 
         #gallery{
             @include sections_headings;
+
+            .swiper-container{
+                background-color: $bg_section;
+            }
+        }
+
+        #team{
+            .tab-wrap{
+                .tabs{
+                    background-color: $team_tabs;
+                    &:hover{
+                        background-color: $team_tabs_hover;
+                    }
+                }
+                .tab-active{
+                    background-color: $team_tab_active;
+                }
+            }
+            .content-container{
+                background-color: $bg_section;
+            }
         }
 
         #sponsors{

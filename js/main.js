@@ -1,3 +1,6 @@
+document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=' + (1 / window.devicePixelRatio));
+
+
 // Loader
 function loaderTime() {
     setTimeout(showpage, 5000);
@@ -91,14 +94,14 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 'auto',
     autoplay: {
-        delay: 1500,
+        delay: 2000,
         disableOnInteraction: false,
     },
     coverflowEffect: {
-        rotate: 20,
+        rotate: 180,
         stretch: 0,
-        depth: 200,
-        modifier: 1,
+        depth: 260,
+        modifier: 2,
         slideShadows: true,
     }
 
