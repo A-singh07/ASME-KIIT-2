@@ -42,7 +42,7 @@ section{
         #gallery{
             @include sections_headings;
 
-            .swiper-container{
+            .gallery-shadow{
                 background-color: $bg_section;
             }
         }

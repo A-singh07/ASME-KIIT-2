@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
+    <!-- my Font Awesome -->
     <script src="https://kit.fontawesome.com/eb59bb629c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/UK.css">
     <link rel="stylesheet" href="./css/AS.css">
     <link rel="stylesheet" href="./css/PK.css">
+
     <title>ASME-KIIT</title>
 </head>
 
@@ -41,6 +42,24 @@
         </div>
         <h2>Loading...</h2>
     </div> -->
+
+    <!-- Gsap loader -->
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="hide-text">Passion</span>
+            </h1>
+            <h1 class="hide">
+                <span class="hide-text">Ambition</span>
+            </h1>
+            <h1 class="hide">
+                <span class="hide-text">Determination</span>
+            </h1>
+        </div>
+    </div>
+    <div class="intro-slider"></div>
+
+
     <!-- XX---Loader---XX -->
 
     <div id="mother-container">
@@ -62,7 +81,7 @@
                         alt="Third slide">
                 </div>
             </div>
-            <div class="text-one">
+            <div class="text-one" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="2500">
                 <p>
                     ASME <br>
                     KIIT
@@ -193,17 +212,19 @@
                 <!-- Gallery -->
                 <div class="gallery" id="gallery">
                     <h1>Gallery</h1>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                    <div class="gallery-shadow">
+                        <div class="swiper-container" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="Assets/ocean.jpg" alt=""></div>
+                            </div>
                         </div>
                     </div>
 
@@ -677,6 +698,11 @@
 
     <!--Swiper.js-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Gsap.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
 
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
