@@ -1,43 +1,71 @@
-/* ------ Color Themes ------ */
+/* ---------- Color Themes ----------- */
 
-
-// Linen Pallet:-
+/* --- BLUE THEME --- */
 
 // $bg_section: #f8eee4;  // light-creme2
-$bg_section: #eefbff;
-$main_container: white;
+$bg_section: #f7fbfc;
+$main_container: #f7fbfc;
+
+$intro: #1b262c;
+$intro_slider: #b9d7ea;
+
 $scroll_thumb: rgb(187, 187, 187);
 $scroll_thumb_hover: rgb(163, 163, 163);
 
-$nav_top:#769fcd;
+$landing_cover: rgba(178, 217, 230, 0.5); //skyBlue with alpha 0.5
+$bg_text-one: rgba(178, 217, 230, 0.95);  //skyBLue with alpha 0.95
+
+$h1_bg: #b9d7ea;
+
+// $section_shadows: -2px -2px 20px 2px #3bd4fa4d inset; //pk
+$section_shadows: -2px -2px 20px 2px #58a5b84d inset;
+// $section_shadows: -2px -2px 20px 2px rgba(0, 0, 0, 0.3) inset;
+
+// $nav_top:#167a9b;  //pk
+$nav_top:#5093c0;
 $ham_close: white;
-$sidebar: #d6e6f2;
-$nav_hover: #bae8e8;
+// $sidebar: #bbe1fa; //pk
+$sidebar: #c9e4f5;
+// $nav_hover: #56a3bd;  //pk
+$nav_hover: #b6d8f0;
 
 $progress_line: linear-gradient(to right, teal 0%, #4fdf8b 100%);
 $step_active: teal;
 $step_hover: teal;
+$content_timeline: #d9ecf2;
 
-$team_tabs: #d6e6f2;
-$team_tabs_hover: #769fcd;
-$team_tab_active:#769fcd;
+$team_tabs: #ddf3fa;
+$team_tabs_hover: #b6d8f0;
+$team_tab_hover_shadow: 0px 5px 10px rgba(177, 211, 252, 0.76);
+// $team_tab_active:#769fcd;  //pk
+$team_tab_active:#5ca9dd;
 
-$footer: #272343;
+$footer: #a6d3e2;
+$footer_a: #1b262c;
+
+/* --XX-- BLUE THEME --XX-- */
+
+
+
 
 
 /* ------- FONTS -------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap');
-
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
 
 $font_landing: 'Red Hat Display', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap');
+
+$font_landing2: 'Playfair Display', serif;
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 $font1: 'Quicksand', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$font2: 'Roboto', sans-serif;
 
 /* ------- Responsive layout ------- */
 
