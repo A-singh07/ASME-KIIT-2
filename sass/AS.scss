@@ -135,13 +135,15 @@ h1
 
     .intro-text{
         color: white;
-        font-weight: 900;
 
         .hide{
             // background: pink;
             padding: 10px;
             font-size: 4rem;
             overflow: hidden;
+            font-weight: bolder;
+            font-family: $font2;
+            
 
             span{
                 transform: translateY(100%);  // only y-axis

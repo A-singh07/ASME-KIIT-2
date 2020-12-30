@@ -5,17 +5,10 @@ body{
     font-family: $font1;
 }
 
-.intro{
-
-    .intro-text{
-        font-family: $font2;
-    }
-}
-
 .landing-slider{
-    font-family: $font2;
 
     .text-one{
+        font-family: $font_landing2;
         background: $bg_text-one;
     }
 }
