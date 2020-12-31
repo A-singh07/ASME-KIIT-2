@@ -1,22 +1,24 @@
-// document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=' + (1 / window.devicePixelRatio));
 
+// Loader  --- Gsap 
 
-// Loader
-// function loaderTime() {
-//     setTimeout(showpage, 5000);
-// }
-// function showpage() {
-//     $("#loader-container").css("display", "none");
-//     $("#mother-container").css("display", "block");
-// }
+const tl = gsap.timeline();
 
-// INTRO
-
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-
-tl.to(".hide-text", { y: "0%", duration: 1, stagger: 0.25 });
-tl.to(".intro-slider", { y: "-100%", duration: 1.5, delay: 0.5 });
-tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.to(".hide-text", {
+    y: "0%",
+    duration: 1.3,
+    stagger: 0.3,
+    ease: "back.out"
+});
+tl.to(".intro-slider", {
+    y: "-100%",
+    duration: 1.5,
+    delay: 0.6
+});
+tl.to(".intro", {
+    y: "-100%",
+    duration: 1
+}, "-=1");
+tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 
 
 // NAVBAR

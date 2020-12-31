@@ -146,7 +146,7 @@ h1
             
 
             span{
-                transform: translateY(100%);  // only y-axis
+                transform: translateY(110%);  // only y-axis
                 display: inline-block;
             }
         }
@@ -166,7 +166,7 @@ h1
 
 #mother-container{
     // display: none;
-    // animation: animate-up 2s ease-out;
+    // animation: animate-up 1s ease-out;
 
     section{
         background-size: cover;

@@ -29,9 +29,10 @@ $sidebar: #c9e4f5;
 // $nav_hover: #56a3bd;  //pk
 $nav_hover: #b6d8f0;
 
-$progress_line: linear-gradient(to right, teal 0%, #4fdf8b 100%);
-$step_active: teal;
-$step_hover: teal;
+// $progress_line: linear-gradient(to right, teal 0%, #4fdf8b 100%);
+$progress_line: linear-gradient(to right, #367dad 0%, #7fdbd7 100%);
+$step_active: #367dad;
+$step_hover: $step_active;
 $content_timeline: #d9ecf2;
 
 $team_tabs: #ddf3fa;
