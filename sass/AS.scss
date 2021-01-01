@@ -294,7 +294,9 @@ h1
                                 border-radius: 50px;
                                 max-width: 100%;  // Imp prop.
                                 transition: all ease 0.9s;
-                                animation: timeline 2s ease-out 0.5s;
+                            }
+                            .animate-progress-line{
+                                animation: timeline 3s ease;
                             }
                         }
                     }

@@ -12,15 +12,6 @@
     from{width: 0px;}
     to{width: 100%;}
 }
-@keyframes move-object{
-    from{left: 0;}
-    to{left: calc(100% - 180px);}
-}
-@keyframes loading{
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
-}
 
 @keyframes animate-up{
     from{

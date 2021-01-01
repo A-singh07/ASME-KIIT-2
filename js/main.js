@@ -1,5 +1,5 @@
 
-// Loader  --- Gsap 
+// ----- Loader  --- Gsap 
 
 const tl = gsap.timeline();
 
@@ -21,13 +21,15 @@ tl.to(".intro", {
 tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 
 
-// NAVBAR
+// ----- NAVBAR
 
+var sidebar = $(".sidebar");
 var sidebar_i = $(".sidebar li i");
 var sidebar_span = $(".sidebar li span");
 var nav = $("#nav");
 var nav_ham = $("#hamburger");
 var nav_close = $("#nav #nav-close");
+
 
 $("#hamburger").click(function () {
 
@@ -53,14 +55,25 @@ $("#nav-close").click(function () {
     });
 });
 
-// TIMELINE
+// ----- TIMELINE
+
+$(window).scroll(function () {
+
+    //to check scrol pos: -
+    // const samY = document.documentElement.scrollTop;
+    // console.log('Scroll Y: ' + samY);
+
+    if ($(this).scrollTop() > 750)
+        $("#progress-line").addClass("animate-progress-line");
+    else
+        $("#progress-line").removeClass("animate-progress-line");
+})
 
 // for small dots to show active
 $(".step").click(function () {
     $(this).addClass("tl-active").prevAll().addClass("tl-active");
     $(this).nextAll().removeClass("tl-active");
 });
-
 
 var totalSteps = $(".step");
 var division = 100 / (totalSteps.length - 1);
@@ -81,7 +94,7 @@ function activeFunc(step) {
 }
 
 
-//OUR TEAM
+// ----- OUR TEAM
 
 $(".tabs").click(function () {
     $(this).prevAll().removeClass("tab-active");
@@ -95,7 +108,7 @@ function activeCont(cont) {
 }
 
 
-// GALLERY
+// ----- GALLERY
 
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',

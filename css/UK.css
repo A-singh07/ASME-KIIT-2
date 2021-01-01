@@ -45,7 +45,7 @@
     border-radius: 0.5em;
 }
 
-/* Side Nav */
+/* Side Nav */  
 
 #nav{
     position: fixed;
@@ -87,6 +87,7 @@
     height: 100vh;
     z-index: 900;
     box-shadow: 2px 0px 20px rgba(71, 71, 71, 0.5);
+    /* transition: width 0.3s ease; */
     /* background: pink; */
 }
 
@@ -205,7 +206,6 @@
     transition: 0.5s ease;
     border-radius: 1.1em;
     font-size: 1.1em;
-    font-weight: 500;
 }
 
 .content-container
