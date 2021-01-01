@@ -41,8 +41,16 @@ $team_tab_hover_shadow: 0px 5px 10px rgba(177, 211, 252, 0.76);
 // $team_tab_active:#769fcd;  //pk
 $team_tab_active:#5ca9dd;
 
-$footer: #a6d3e2;
-$footer_a: #1b262c;
+// $footer: #c9e4f5;
+$footer: #1b262c;
+$footer_a: #f7fbfc;
+
+
+// color for social media Icons
+$facebook_color:#4267B2;
+$instagram_color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$twitter_color:#00acee;
+$linkedin_color: #1b7aa7;
 
 /* --XX-- BLUE THEME --XX-- */
 
@@ -65,6 +73,26 @@ $font1: 'Quicksand', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
 
 $font2: 'Merriweather', serif;
+
+
+// Rotis Semi Serif
+
+@font-face{
+    font-family: rotis_semi_serif;
+    src: url(../Assets/FONTS/RotisSemiSerifStd.otf);
+}
+
+$font_rotis_head: rotis_semi_serif;
+
+// Rotis Serif
+
+@font-face{
+    font-family: rotis_serif;
+    src: url(../Assets/FONTS/RotisSerif.otf);
+}
+
+$font_rotis: rotis_serif;
+
 
 /* ------- Responsive layout ------- */
 

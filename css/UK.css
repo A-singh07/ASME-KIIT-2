@@ -37,7 +37,7 @@
     position: absolute;
     z-index: 50;
     mix-blend-mode: screen;
-    font-weight: 700;
+    font-weight: bold;
     width: 25%;
     font-size: 5em;
     padding: 30px;
@@ -140,10 +140,11 @@
 
 /* -------- GALLERY --------- */
 
-/* #gallery
+#gallery
 {
-    background-color: khaki;
-} */
+    margin-bottom: 20px;
+    /* background-color: khaki; */
+}
 
 .gallery-shadow{
     border-radius: 50px;
@@ -181,8 +182,8 @@
 
 #team
 {
-    padding-top: 20px;
     height: 100vh;
+    margin-bottom: 20px;
     /* background-color: burlywood; */
 }
 #team h1{

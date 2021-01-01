@@ -141,8 +141,8 @@ h1
             padding: 10px;
             font-size: 4rem;
             overflow: hidden;
-            font-weight: bolder;
-            font-family: $font2;
+            font-weight: bold;
+            font-family: $font_rotis_head;
             
 
             span{
@@ -165,8 +165,24 @@ h1
 
 
 #mother-container{
-    // display: none;
-    // animation: animate-up 1s ease-out;
+    // position: relative;
+
+    #logo{
+        width: 200px;
+        // height: 200px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        padding: 10px;
+        text-align: center;
+        // background-color: blue;
+
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }
 
     section{
         background-size: cover;
@@ -210,6 +226,7 @@ h1
                 // background-color: yellow;
                 padding-top: 30px;
                 padding-bottom: 50px;
+                margin-bottom: 20px;
 
                 .timeline-wrapper{
                     // background-color: yellowgreen;

@@ -3,9 +3,7 @@
 
 .sponsors{
   width: 100%;
-  /* height: 60vh; */
-  padding-top: 40px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
   /* background-color: aqua; */
 }
 .sponsors h1{
@@ -15,11 +13,8 @@
 
 .sponsors-wrapper{
   width: 95%;
-  height: 85%;
-  /* display: grid;
-  margin: 50px auto;
-  padding: 30px;
-  overflow: auto; */
+  height: 80%;
+  margin: 30px auto;
   border-radius: 3em;
 }
 
@@ -27,7 +22,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  margin: 50px auto;
+  margin-top: 20px;
   padding: 30px;
   overflow: auto;
   /* background-color: #ff002d; */
@@ -37,10 +32,10 @@
   display: flex;
   justify-content:space-around;
   width: 80%;
-  margin-bottom: 20px;
+  margin-top: 10px;
   align-self: center;
   justify-self: center;
-  padding: 10px;
+  padding: 20px;
   /* background-color: aquamarine; */
   }
   
@@ -62,7 +57,17 @@
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3) ;
   padding: 50px 0px 20px 0px;
 }
-
+#footer-logo{
+  width: 200px;
+  /* height: 200px; */
+  padding: 10px;
+  text-align: left;
+  /* background-color: burlywood; */
+}
+#footer-logo img{
+  width: 200px;
+  height: auto;
+}
 .foothr{
   height: 10px;
 	border: 0;
@@ -72,14 +77,14 @@
 }
 
 .site-footer h6{
-  color:#1b262c;
+  /* color:#1b262c; */
   font-size:16px;
   text-transform:uppercase;
   letter-spacing:2px;
   padding-top: 30px;
 }
 .designers{
-  color: black;
+  /* color: black; */
   margin-left: 30px;
 }
 
@@ -92,19 +97,18 @@ h6{
 }
 .mailid
 {
-  color: #1b262c;
   font-size: 1.2em;
+  transition: 0.3s ease;
 }
-.mailid:hover
+
+
+/* .fab .fa-linkedin .fa-3x .insta:hover
 {
-  color: #000000;
-}
-.fab .fa-linkedin .fa-3x .insta:hover
-{color:white;
+  color:white;
   background-color: #ff002d ;
 }
 .fab .fa-linkedin .fa-3x .linkedin:hover
 {
   background-color:white;
   color: #a6d3e2;
-}
+} */

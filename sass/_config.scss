@@ -35,6 +35,13 @@ section{
 
     .main-container{
 
+        .about{
+            h2{
+                font-family: $font_rotis_head;
+            }
+            
+        }
+
         #achivements{
             @include sections_headings;
 
@@ -55,6 +62,8 @@ section{
         }
 
         #team{
+            @include sections_headings;
+            height: 100vh;
             .tab-wrap{
 
                 .tabs{
@@ -75,6 +84,7 @@ section{
         }
 
         #sponsors{
+            @include sections_headings;
 
             .sponsors-wrapper{
                 background-color: $bg_section;
@@ -87,6 +97,20 @@ section{
 
 .site-footer{
     background-color: $footer;
+    h6{
+        
+        color: white;
+    }
+    .designers{
+        color: white;
+    }
+    .mailid{
+        color:white;
+
+        &:hover{
+            color: lightblue;
+        }
+    }
 
     a{
         color: $footer_a;
