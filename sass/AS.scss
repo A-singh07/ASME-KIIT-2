@@ -47,10 +47,13 @@ h1
     display: none;
     justify-content: center;
     align-content: center;
+    @media screen and (max-width: 48em){
+        display: grid;
+    }
 
     h2{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 10px;
         font-family: $font_rotis;
         // background-color: brown;
@@ -99,9 +102,12 @@ h1
     transform: translateY(100%);
 }
 
-
 #mother-container{
     // position: relative;
+    display: block;
+    @media screen and (max-width: 48em){
+        display: none;
+    }
 
     .landing-cover{
         position: absolute;
