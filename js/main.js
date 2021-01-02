@@ -1,7 +1,7 @@
 
 // mobile-info
 
-if (window.matchMedia("max-width: 48em").matches) {
+if (window.matchMedia("(max-width: 48em)").matches) {
     $(".mobile-info").css("display", "grid");
     $(".mother-container").css("display", "none");
 }
