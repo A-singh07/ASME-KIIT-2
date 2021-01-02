@@ -1,4 +1,16 @@
 
+// mobile-info
+
+if (window.matchMedia("max-width: 48em").matches) {
+    $(".mobile-info").css("display", "grid");
+    $(".mother-container").css("display", "none");
+}
+else {
+    $(".mobile-info").css("display", "none");
+    $(".mother-container").css("display", "block");
+}
+
+
 // ----- Loader  --- Gsap 
 
 const tl = gsap.timeline();

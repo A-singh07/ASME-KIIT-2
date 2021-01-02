@@ -98,16 +98,16 @@ $font_rotis: rotis_serif;
 /* ------- Responsive layout ------- */
 
 // Breakpoints
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
+$bp_small: 48em; // 768px
+$bp_medium: 64em; // 1024px
+$bp_large: 85.375em; // 1366px
+$bp_xlarge: 120em; // 1920px
+$bp_xxlarge: 160em; // 2560px
 
 // Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$mq_small: "(min-width: #{$bp-small})";
+$mq_medium: "(min-width: #{$bp-medium})";
+$mq_large: "(min-width: #{$bp-large})";
+$mq_xlarge: "(min-width: #{$bp-xlarge})";
+$mq_xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq_retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
