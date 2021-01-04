@@ -83,14 +83,25 @@ h1
             font-weight: bold;
             font-family: $font_rotis_head;
             
-
             span{
                 transform: translateY(110%);  // only y-axis
                 display: inline-block;
             }
         }
     }
+
+    @media screen and (min-width: $mobileS) and (max-width: $tablet) {
+
+        .intro-text{
+
+            .hide{
+                padding: 5px;
+                font-size: 2em;
+            }
+        }
+    }
 }
+
 .intro-slider{
     background: $intro_slider;
     position: fixed;
@@ -122,7 +133,7 @@ h1
     }
 
     #logo{
-        width: 200px;
+        width: 12rem; // nearly 200px
         // height: 200px;
         position: absolute;
         top: 30px;
@@ -133,8 +144,15 @@ h1
         // background-color: blue;
 
         img{
-            width: 150px;
+            width: 90%;
             height: auto;
+        }
+
+        @media screen and (max-width: $tablet){
+            width: 4.8rem;
+            top: 0;
+            right: 20px;
+            padding: 0;
         }
     }
 

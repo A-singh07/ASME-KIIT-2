@@ -18,21 +18,6 @@ body{
 
     }
 }
-#sm-nav{
-    background-color: $nav_top;
-
-    #sm-hamburger{
-        color: $ham_close;
-    }
-    #sm-nav-close{
-        color: $ham_close;
-    }
-
-    @media screen and (max-width: $laptop) {
-        display: block;
-    }
-
-}
 
 .sidebar{
     background-color: $sidebar;
@@ -66,6 +51,17 @@ body{
             left: 0;
             width: 70px;
             border-bottom-right-radius: 2rem;
+        }
+    }
+    @media screen and (max-width: $tablet){
+        #nav{
+            width: 100%;
+            height: 70px;
+            border-radius: 0;
+
+            i{
+                padding: 18px;
+            }
         }
     }
 }
