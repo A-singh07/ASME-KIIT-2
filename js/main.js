@@ -23,7 +23,6 @@ if (window.matchMedia("(min-width: 48em)").matches) {
 }
 
 
-
 // ----- NAVBAR
 
 var sidebar = $(".sidebar");
@@ -114,6 +113,8 @@ function activeCont(cont) {
 // ----- GALLERY
 
 var swiper = new Swiper('.swiper-container', {
+    observer: true,
+    observeParents: true,
     effect: 'coverflow',
     grabCursor: true,
     loop: true,

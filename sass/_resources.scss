@@ -98,16 +98,10 @@ $font_rotis: rotis_serif;
 /* ------- Responsive layout ------- */
 
 // Breakpoints
-$bp_small: 48em; // 768px
-$bp_medium: 64em; // 1024px
-$bp_large: 85.375em; // 1366px
-$bp_xlarge: 120em; // 1920px
-$bp_xxlarge: 160em; // 2560px
-
-// Media Queries
-$mq_small: "(min-width: #{$bp-small})";
-$mq_medium: "(min-width: #{$bp-medium})";
-$mq_large: "(min-width: #{$bp-large})";
-$mq_xlarge: "(min-width: #{$bp-xlarge})";
-$mq_xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq_retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$mobileS: 320px;
+$mobileL: 420px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1366px;
+$laptopXL: 1920px;
+$display_4k: 2560px;

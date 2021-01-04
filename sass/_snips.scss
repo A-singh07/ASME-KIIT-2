@@ -9,18 +9,8 @@
     }
 }
 
+
 @keyframes timeline{
     from{width: 0px;}
     to{width: 100%;}
-}
-
-@keyframes animate-up{
-    from{
-        margin-top: 100px;
-        // opacity: 0;
-    }
-    to{
-        margin-top: 0;
-        // opacity: 1;
-    }
 }

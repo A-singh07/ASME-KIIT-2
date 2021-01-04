@@ -25,6 +25,11 @@ body{
 .sidebar{
     background-color: $sidebar;
 
+    @media screen and (max-width: $laptop) {
+        display: none;
+
+    }
+
     li:hover{
         background-color: $nav_hover;
     }
@@ -39,7 +44,6 @@ section{
             h2{
                 font-family: $font_rotis_head;
             }
-            
         }
 
         #achivements{
