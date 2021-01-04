@@ -9,29 +9,64 @@ body{
 
     .text-one{
         font-family: $font_landing2;
-        background: $bg_text-one;
+        background: $bg_text-one;   
+    }
+    @media screen and (max-width: $laptop) {
+        .text-one{
+            font-size: 3rem;
+        }
+
     }
 }
-#nav{
+#sm-nav{
     background-color: $nav_top;
 
-    #hamburger{
+    #sm-hamburger{
         color: $ham_close;
     }
-    #nav-close{
+    #sm-nav-close{
         color: $ham_close;
     }
+
+    @media screen and (max-width: $laptop) {
+        display: block;
+    }
+
 }
+
 .sidebar{
     background-color: $sidebar;
 
-    @media screen and (max-width: $laptop) {
-        display: none;
-
-    }
-
     li:hover{
         background-color: $nav_hover;
+    }
+
+    #nav{
+        background-color: $nav_top;
+    
+        #hamburger{
+            color: $ham_close;
+        }
+        #nav-close{
+            color: $ham_close;
+        }
+    }
+
+    @media screen and (max-width: $laptop) {
+        left: -100px;
+
+        ul{
+            margin-top: 60px;
+        }
+
+        #nav{
+            // display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70px;
+            border-bottom-right-radius: 2rem;
+        }
     }
 }
 

@@ -55,7 +55,7 @@ h1
         font-family: $font_rotis_head;
         // background-color: brown;
     }
-    @media screen and (max-width: 48em) {
+    @media screen and (max-width: $tablet) {
         display: grid;
     }
 }
@@ -106,7 +106,7 @@ h1
     // position: relative;
     display: block;
 
-    @media screen and (max-width: 48em) {
+    @media screen and (max-width: $tablet) {
         display: none;
     }
 
@@ -125,7 +125,7 @@ h1
         width: 200px;
         // height: 200px;
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 20px;
         z-index: 1000;
         padding: 10px;
