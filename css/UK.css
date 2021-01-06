@@ -8,17 +8,17 @@
 .mode-toggler
 {
     width: 80px;
+    height: 80px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 1rem;
+    bottom: 1rem;
     padding: 10px;
     background-color: black;
-    border-radius: 15px;
+    border-radius: 1rem;
     font-size: 1em;
     z-index: 1500;
-    margin: 5px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    font-weight: bolder;
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -30,7 +30,7 @@
 
 .mode-toggler p
 {
-    padding-top: 5px;
+    /* padding-top: 5px; */
     text-align: center;
     color: blanchedalmond;
 }
@@ -121,7 +121,6 @@
     display: none;
 }
 
-
 .sidebar
 {
     position: fixed;
@@ -211,8 +210,8 @@
 {
     background-position: center;
     background-size: cover;
-    height: 25rem;
-    width: 25rem;
+    height: 90%;
+    width: 28rem;
     align-self: center;
     border-radius: 2em;
 }
