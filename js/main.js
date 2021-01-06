@@ -42,6 +42,7 @@ var nav_close = $("#nav-close");
 $(nav_ham).click(function () {
 
     if (window.matchMedia("(max-width: 768px)").matches) {
+        
 
         $(sidebar).animate({ width: '100vw', left: '0' }, 300, function () {
             sidebar_span.css("display", "inline");
@@ -85,9 +86,6 @@ $(nav_close).click(function () {
 
         nav.animate({ width: '70px' }, 300);
     }
-
-
-
 
 });
 
