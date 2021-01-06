@@ -89,7 +89,6 @@ $(nav_close).click(function () {
 });
 
 
-
 // ----- TIMELINE
 
 $(window).scroll(function () {
