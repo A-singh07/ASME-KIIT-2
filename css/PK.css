@@ -38,17 +38,17 @@
   /* background-color: aquamarine; */
   }
   
-  .brand_image{
-    width: 9rem;
-    height: 9rem;
-    border-radius: 10%;
-  }
-  .brand_image:hover{
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-  }
+.brand_image{
+  width: 9rem;
+  height: 9rem;
+  border-radius: 10%;
+}
+.brand_image:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
 
-  /* ---- footer ---- */
+/* ---- footer ---- */
 
 .site-footer{
   font-size:15px;
@@ -59,14 +59,15 @@
 #footer-logo{
   width: 200px;
   /* height: 200px; */
-  margin-left: 10px;
   padding: 10px;
   text-align: left;
-  /* background-color: burlywood; */
+  /* background-color:lightgreen; */
 }
 #footer-logo img{
-  width: 150px;
+  width: 160px;
   height: auto;
+  box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: crimson;
 }
 .foothr{
   height: 10px;
@@ -89,7 +90,7 @@
 }
 #designer-footer{
   /* background-color: burlywood; */
-  padding-left: 2.5rem;
+  padding-left: 4rem;
 }
 
 div{
@@ -97,7 +98,7 @@ div{
   padding: 0;
 }
 h6{
-  margin: 10;
+  margin: 10px;
 }
 .mailid
 {

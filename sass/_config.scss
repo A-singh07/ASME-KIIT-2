@@ -8,8 +8,8 @@ body{
 .landing-slider{
 
     .text-one{
-        font-family: $font_landing2;
-        background: $bg_text-one;   
+        font-family: $font_rotis_head;
+        // background: $bg_text-one;   
     }
     @media screen and (max-width: $laptop) {
         .text-one{
