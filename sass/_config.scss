@@ -147,4 +147,10 @@ section{
     a{
         color: $footer_a;
     }
+
+    @media screen and (max-width: $tablet){
+        padding-left: 0;
+    }
+
+
 }
