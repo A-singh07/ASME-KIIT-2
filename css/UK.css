@@ -5,6 +5,36 @@
     padding: 0;
 }
 
+.mode-toggler
+{
+    width: 80px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 1em;
+    z-index: 1500;
+    margin: 5px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mode-toggler:hover
+{
+   background-color: rgb(70, 68, 68);
+   color: white;
+}
+
+.mode-toggler p
+{
+    padding-top: 5px;
+    text-align: center;
+    color: blanchedalmond;
+}
+
 .landing-slider{
     height: 100vh;
     display: flex;
