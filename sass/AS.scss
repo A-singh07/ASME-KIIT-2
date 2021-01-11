@@ -31,6 +31,10 @@ div *{
         width: 5px;
         background-color: transparent;
     }
+    ::-webkit-scrollbar:horizontal{
+        height: 5px;
+        background-color: transparent;
+    }
 }
 
 // .on-scroll::-webkit-scrollbar-track{
@@ -52,13 +56,19 @@ width: 10%;
 margin: auto;
 }
 
-h1
-{
+h1{
   background-color: $h1_bg;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   border-top-left-radius: 2em;
   border-bottom-right-radius: 2em;
-  padding:20px;
+  padding: 20px;
+
+  @media screen and (max-width:$mobileL) {
+    font-size: 2em;
+    border-top-left-radius: 1.8em;
+    border-bottom-right-radius: 1.8em;
+    padding: 10px;
+  }
 }
 
 .mobile-info{
@@ -138,9 +148,9 @@ h1
     // position: relative;
     display: block;
 
-    @media screen and (max-width: $tablet) {
-        display: none;
-    }
+    // @media screen and (max-width: $tablet) {
+    //     display: none;
+    // }
 
     .landing-cover{
         position: absolute;
@@ -183,13 +193,13 @@ h1
         // padding: 0 180px;
 
         .main-container{
-            background-color: $main_container;
+            // background-color: $main_container;
             // box-shadow: 2px 0px 20px rgba(71, 71, 71, 0.5);
             height: 100%;
             margin: 0 15%;
 
             @media screen and (max-width: $laptop) {
-                margin: 0 5%;
+                margin: 0 8px;
     
             }
 
@@ -219,16 +229,43 @@ h1
                     font-weight: 500;
                     padding: 6%;
                 }
+
+                @media screen and (max-width: $mobileL) {
+                
+                    display: block;
+                    padding: 0px;
+                    margin-top: 10px;
+                    background-color: $h1_bg;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                    border-top-left-radius: 3.5em;
+                    border-bottom-right-radius: 2.8em;
+                    margin-bottom: 30px;
+    
+                    h2{
+                        background-color: $h1_bg_abt;
+                        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                        border-top-left-radius: 1.6em;
+                        border-bottom-right-radius: 1.6em;
+                        padding: 10px;
+                        font-size: 2em;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-size: 0.8em;
+                    }
+                }
             }
 
             .timeline{
-                // background-color: yellow;
+                background-color: yellow;
                 padding-top: 30px;
                 padding-bottom: 50px;
                 margin-bottom: 20px;
 
                 .timeline-wrapper{
-                    // background-color: yellowgreen;
+                    background-color: yellowgreen;
                     width: 95%;
                     height: 85%;
                     margin: auto;
@@ -238,7 +275,7 @@ h1
                     // box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.3) inset;
 
                     #progress-bar{
-                        // background-color: rosybrown;
+                        background-color: rosybrown;
                         width: 100%;
                         margin: auto;
                         height: 80px;
@@ -345,6 +382,9 @@ h1
                             display: block;
                         }
                     }
+                }
+                @media screen and(max-width:$mobileL){
+                    padding-top: 0;
                 }
             }
         } 

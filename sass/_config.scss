@@ -15,7 +15,6 @@ body{
         .text-one{
             font-size: 3rem;
         }
-
     }
 }
 
@@ -60,6 +59,25 @@ body{
             margin-top: 60px;
         }
     }
+    @media screen and (max-width: $mobileL){
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        ul{
+            width: 70%;
+            margin: auto;
+            margin-top: 60px;
+
+            li{
+                padding: 10px 0;
+                span{
+                    font-size: 1em;
+                }
+                i{
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
 }
 
 section{
@@ -68,6 +86,7 @@ section{
     .main-container{
 
         .about{
+
             h2{
                 font-family: $font_rotis_head;
             }
@@ -90,6 +109,29 @@ section{
                 background-color: $bg_section;
                 box-shadow: $section_shadows;
             }
+
+            @media screen and (max-width: $mobileL) {
+
+                .gallery-shadow{
+                    width: 100%;
+                    border-radius: 2em;
+                }
+
+                .swiper-container{
+                    width: 95%;
+                    height: 98%;
+                    padding-top: 10px;
+
+                    .swiper-slide{
+                        width: 100%;
+                        height: 100%;
+
+                        img{
+                            border-radius: 2em;
+                        }
+                    }
+                }
+            }
         }
 
         #team{
@@ -111,6 +153,66 @@ section{
             .content-container{
                 background-color: $bg_section;
                 box-shadow: $section_shadows;
+            }
+            @media screen and (max-width: $mobileL) {
+                
+                .content-container{
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 2em;
+
+                    .t-content{
+                        overflow-x: auto;
+                        overflow-y: hidden;
+                        height: 100%;
+                        min-width: 100%;
+
+                        .team-row2{
+                            width: 100%;
+                            padding: 15px 0;
+                            height: 100%;
+
+                            span{
+                                padding: 5px;
+                                grid-template-rows: 1fr 0.8fr;
+
+                                div{
+                                    width: 12em;
+                                    height: 14em;
+                                }
+
+                                h5{
+                                    padding: 15px 5px;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                        .team-row{
+                            padding: 15px 0;
+                            height: 100%;
+
+                            span{
+                                padding: 5px;
+                                grid-template-rows: 1fr 0.8fr;
+
+                                div{
+                                    width: 12em;
+                                    height: 14em;
+                                }
+
+                                h5{
+                                    padding: 15px 5px;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                    .t-content-active{
+                        display: flex;
+                        align-items: center
+                    }
+                }
             }
         }
 

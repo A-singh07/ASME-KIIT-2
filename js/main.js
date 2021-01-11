@@ -1,8 +1,5 @@
 // Dark Mode toggler
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("darkMode");
-// }
+
 var toggler_p = $("#toggle-p");
 
 $(".mode-toggler").click(function () {
