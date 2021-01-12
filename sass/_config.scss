@@ -12,10 +12,6 @@ body{
         // background: $bg_text-one;   
     }
 
-    // @media screen and(max-width: $mobileL) {
-    //     // margin-top: 70px;
-    // }
-
     @media screen and (max-width: $laptop) {
         .text-one{
             font-size: 3rem;
@@ -82,12 +78,6 @@ body{
                 }
             }
         }
-    }
-}
-
-.landing-cover{
-    @media screen and(max-width: $mobileL) {
-        margin-top: 70px;
     }
 }
 
@@ -184,6 +174,8 @@ section{
 
             @media screen and (max-width: $mobileL) {
 
+                height: 80vh;
+
                 .tab-wrap{
                     height: 40px;
 
@@ -221,7 +213,7 @@ section{
                                         grid-template-rows: 1fr 0.8fr;
         
                                         div{
-                                            width: 12em;
+                                            width: 13em;
                                             height: 14em;
                                         }
         
@@ -238,7 +230,7 @@ section{
                                 grid-template-rows: 1fr 0.8fr;
 
                                 div{
-                                    width: 12em;
+                                    width: 13em;
                                     height: 14em;
                                 }
 
