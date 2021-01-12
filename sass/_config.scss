@@ -154,7 +154,34 @@ section{
                 background-color: $bg_section;
                 box-shadow: $section_shadows;
             }
+
+            @media screen and (min-width: $mobileS) and (max-width: $mobileM){
+                .team-row3{
+                    margin-right: 8.5em;
+                }
+            }
+            @media screen and (min-width: $mobileM) and (max-width: 400px){
+                .team-row3{
+                    margin-right: 5em;
+                }
+            }
+            @media screen and (min-width: 400px) and (max-width: $mobileL){
+                .team-row3{
+                    margin-right: 3em;
+                }
+            }
+
             @media screen and (max-width: $mobileL) {
+
+                .tab-wrap{
+                    height: 40px;
+
+                    button{
+                        font-size: 0.8em;
+                        border-radius: 1em;
+                        padding: 10px 15px;
+                    }
+                }
                 
                 .content-container{
                     width: 100%;
@@ -165,35 +192,38 @@ section{
                         overflow-x: auto;
                         overflow-y: hidden;
                         height: 100%;
-                        min-width: 100%;
-
-                        .team-row2{
-                            width: 100%;
-                            padding: 15px 0;
-                            height: 100%;
-
-                            span{
-                                padding: 5px;
-                                grid-template-rows: 1fr 0.8fr;
-
-                                div{
-                                    width: 12em;
-                                    height: 14em;
-                                }
-
-                                h5{
-                                    padding: 15px 5px;
-                                    font-size: 1em;
-                                }
-                            }
-                        }
 
                         .team-row{
-                            padding: 15px 0;
+                            padding: 10px 0;
                             height: 100%;
+                            flex-wrap: nowrap;
+
+                            .team-row3{
+                                width: 100%;
+                                height: 100%;
+    
+                                .team-heads{
+                                    width: 100%;
+    
+                                    span{
+                                        padding: 10px 5px;
+                                        grid-template-rows: 1fr 0.8fr;
+        
+                                        div{
+                                            width: 12em;
+                                            height: 14em;
+                                        }
+        
+                                        h5{
+                                            padding: 15px 5px;
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
 
                             span{
-                                padding: 5px;
+                                padding: 10px 5px;
                                 grid-template-rows: 1fr 0.8fr;
 
                                 div{
@@ -208,10 +238,9 @@ section{
                             }
                         }
                     }
-                    .t-content-active{
-                        display: flex;
-                        align-items: center
-                    }
+                    // .t-content-active{
+                    //     display: flex;
+                    // }
                 }
             }
         }

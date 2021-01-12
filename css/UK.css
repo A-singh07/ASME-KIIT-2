@@ -282,47 +282,62 @@
 .team-row
 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
     width: 100%;
     height: 18em;
-    padding: 5px 10px;
+    padding: 5px 8px;
     margin: auto;
     /* background-color: lightblue; */
 }
 
-.team-row2
-{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 50%;
+.team-row3{
+    width: 90%;
     height: 18em;
-    padding: 5px 10px;
     margin: auto;
     /* background-color: lightblue; */
+}
+
+.team-row3 .team-heads{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    /* background-color: chocolate; */
+}
+
+.team-row3 .team-heads span{
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+    width: 15em;
+    height: 100%;
+    margin: auto;
+    padding: 2px 8px;
+    /* background-color: cadetblue; */
 }
 
 .team-row span
 {
     display: grid;
     grid-template-rows: 2fr 0.5fr;
-    width:100%;
+    width: 15em;
     height: 100%;
     padding: 2px 8px;
     /* background-color: cadetblue; */
 }
-.team-row2 span
-{
-    display: grid;
-    grid-template-rows: 2fr 0.5fr;
-    width:100%;
+.team-row3 .team-heads span div{
+    width: 100%;
     height: 100%;
-    padding: 2px 8px;
-    /* background-color: cadetblue; */
+    overflow: hidden;
+    /* background-color: brown; */
 }
 .team-row span div
 {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    border-radius: 1.5em;
+    box-shadow: 1px 7px 8px 1px rgba(0,0,0,0.29);
     /* background-color: brown; */
 }
 .team-row span div img
@@ -330,19 +345,14 @@
     width: 100%;
     height: 100%;
     border-radius: 1.5em;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.team-row2 span div
-{
+.team-row3 .team-heads span h5{
     width: 100%;
     height: 100%;
-}
-.team-row2 span div img
-{
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5em;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+    /* background-color: chartreuse; */
 }
 
 .team-row span h5
@@ -352,12 +362,6 @@
     text-align: center;
     padding: 15px;
     font-size: 1.1em;
-    /* background-color: chartreuse; */
-}
-.team-row2 span h5
-{
-    text-align: center;
-    padding: 15px;
     /* background-color: chartreuse; */
 }
 
