@@ -11,6 +11,11 @@ body{
         font-family: $font_rotis_head;
         // background: $bg_text-one;   
     }
+
+    // @media screen and(max-width: $mobileL) {
+    //     // margin-top: 70px;
+    // }
+
     @media screen and (max-width: $laptop) {
         .text-one{
             font-size: 3rem;
@@ -77,6 +82,12 @@ body{
                 }
             }
         }
+    }
+}
+
+.landing-cover{
+    @media screen and(max-width: $mobileL) {
+        margin-top: 70px;
     }
 }
 
