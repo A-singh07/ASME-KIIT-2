@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     user-select: none;  // Chrome & Opera
     -webkit-user-select: none;  // chrome & safari
     -moz-user-select: none;    // Mozilla
