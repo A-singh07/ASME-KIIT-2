@@ -62,6 +62,13 @@ var nav_ham = $("#hamburger");
 var nav_close = $("#nav-close");
 
 // Nav Open
+
+$(".nav-li").click(function () {
+    $(this).prevAll().removeClass("nav-li-active");
+    $(this).nextAll().removeClass("nav-li-active");
+    $(this).addClass("nav-li-active");
+});
+
 $(nav_ham).click(function () {
 
     if (window.matchMedia("(max-width: 768px)").matches) {
