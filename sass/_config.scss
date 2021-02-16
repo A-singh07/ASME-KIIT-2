@@ -19,7 +19,6 @@ body {
 }
 
 #nav {
-  background-color: $nav_top;
 
   #hamburger {
     color: $ham_close;
@@ -29,30 +28,41 @@ body {
     color: $ham_close;
   }
 
-  @media screen and (max-width: $laptop) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70px;
-    border-bottom-right-radius: 2rem;
-  }
+  // @media screen and (max-width: $laptop) {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 70px;
+  //   // border-bottom-right-radius: 2rem;
+  // }
 
   @media screen and (max-width: $tablet) {
-    width: 100%;
-    height: 70px;
-    border-radius: 0;
+    width: 65px;
+    position: absolute;
 
     i {
-      padding: 18px;
+      background-color: $primary_color;
     }
   }
+
 }
 
 .sidebar {
-  background-color: $sidebar;
 
-  li:hover {
-    background-color: $nav_hover;
+
+  li {
+
+    &:hover {
+      background-color: $nav_hover;
+    }
+
+    p {
+      background-color: $nav_active_border;
+    }
+  }
+
+  .nav-li-active {
+    background-color: $nav_active;
   }
 
   @media screen and (max-width: $laptop) {
@@ -99,6 +109,7 @@ section {
 
     #achievements {
       @include sections_headings;
+      padding-top: 0;
 
       #achievements-wrapper {
         background-color: $bg_section;
@@ -146,21 +157,6 @@ section {
     #team {
       @include sections_headings;
       height: 100vh;
-
-      .tab-wrap {
-        .tabs {
-          background-color: $team_tabs;
-
-          &:hover {
-            background-color: $team_tabs_hover;
-            box-shadow: $team_tab_hover_shadow;
-          }
-        }
-
-        .tab-active {
-          background-color: $team_tab_active;
-        }
-      }
 
       .content-container {
         background-color: $bg_section;

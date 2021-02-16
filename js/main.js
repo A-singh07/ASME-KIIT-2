@@ -49,7 +49,22 @@ tl.to(".intro", {
 
 // tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 
+if (window.matchMedia("(min-width: 768px)").matches) {
 
+    let navTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#home",
+            start: "bottom 45%",
+            toggleActions: "play none none reverse",
+            markers: true
+        }
+    });
+
+    navTl
+        .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "0" })
+        .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "0" }, "-=0.5")
+        .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.15 }, "-=0.6");
+}
 
 
 // ----- NAVBAR
@@ -61,14 +76,15 @@ var nav = $("#nav");
 var nav_ham = $("#hamburger");
 var nav_close = $("#nav-close");
 
-// Nav Open
 
+// Active Class in Nav
 $(".nav-li").click(function () {
     $(this).prevAll().removeClass("nav-li-active");
     $(this).nextAll().removeClass("nav-li-active");
     $(this).addClass("nav-li-active");
 });
 
+// Nav Open
 $(nav_ham).click(function () {
 
     if (window.matchMedia("(max-width: 768px)").matches) {
@@ -103,8 +119,9 @@ $(nav_ham).click(function () {
 
 });
 
+
 //Nav Close
-$(nav_close).click(function () {
+function navCloseFunc() {
 
     sidebar_span.css("display", "none");
     sidebar_i.css("width", "100%");
@@ -132,47 +149,59 @@ $(nav_close).click(function () {
 
         nav.animate({ width: '70px' }, 300);
     }
-
+}
+$(nav_close).click(function () {
+    navCloseFunc();
 });
 
+$(".nav-li").click(function () {
+    navCloseFunc();
+});
 
-// ----- TIMELINE
-
-$(window).scroll(function () {
-
-    //to check scrol pos: -
-    // const samY = document.documentElement.scrollTop;
-    // console.log('Scroll Y: ' + samY);
-
-    if ($(this).scrollTop() > 750)
-        $("#progress-line").addClass("animate-progress-line");
-    else
-        $("#progress-line").removeClass("animate-progress-line");
+$("section").click(function () {
+    navCloseFunc();
+});
+$(".landing-cover").click(function () {
+    navCloseFunc();
 })
 
-// for small dots to show active
-$(".step").click(function () {
-    $(this).addClass("tl-active").prevAll().addClass("tl-active");
-    $(this).nextAll().removeClass("tl-active");
-});
+// ----- Achievements
 
-var totalSteps = $(".step");
-var division = 100 / (totalSteps.length - 1);
+// $(window).scroll(function () {
 
-function activeFunc(step) {
+//     //to check scrol pos: -
+//     // const samY = document.documentElement.scrollTop;
+//     // console.log('Scroll Y: ' + samY);
 
-    //for progress-line animation
-    if (step == 1) {
-        $("#progress-line").css("width", "3%");
-    }
-    else {
-        $("#progress-line").css("width", ((step - 1) * division) + "%");
-    }
-    // showing the content
-    $(".content-timeline").removeClass("cnt-active");
-    $(".content" + step).addClass("cnt-active");
+//     if ($(this).scrollTop() > 750)
+//         $("#progress-line").addClass("animate-progress-line");
+//     else
+//         $("#progress-line").removeClass("animate-progress-line");
+// })
 
-}
+// // for small dots to show active
+// $(".step").click(function () {
+//     $(this).addClass("tl-active").prevAll().addClass("tl-active");
+//     $(this).nextAll().removeClass("tl-active");
+// });
+
+// var totalSteps = $(".step");
+// var division = 100 / (totalSteps.length - 1);
+
+// function activeFunc(step) {
+
+//     //for progress-line animation
+//     if (step == 1) {
+//         $("#progress-line").css("width", "3%");
+//     }
+//     else {
+//         $("#progress-line").css("width", ((step - 1) * division) + "%");
+//     }
+//     // showing the content
+//     $(".content-timeline").removeClass("cnt-active");
+//     $(".content" + step).addClass("cnt-active");
+
+// }
 
 
 // ----- OUR TEAM
