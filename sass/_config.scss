@@ -338,7 +338,13 @@ section {
 
   @media screen and (max-width: $mobileL) {
     #footer-logo {
+      margin: auto;
+      width: 100%;
       text-align: center;
+
+      img {
+        width: 110px;
+      }
     }
 
     #reach-footer {

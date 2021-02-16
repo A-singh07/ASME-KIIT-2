@@ -67,24 +67,25 @@
 
 #footer-logo {
     width: 200px;
-    /* height: 200px; */
     padding: 10px;
     text-align: left;
+    // background-color: lightgreen;
 
-    /* background-color:lightgreen; */
     img {
         width: 160px;
         height: auto;
         box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
-        background-color: crimson;
+        // background-color: crimson;
     }
 }
 
 .foothr {
-    height: 10px;
+    margin: auto;
+    padding: 5px;
     border: 0;
-    box-shadow: 0 10px 10px -10px #8c8b8b inset;
-    margin: 0;
+    box-shadow: 0 5px 8px 0px #8c8b8b inset;
+    margin: 10px 0 0 0;
+    border-radius: 2em;
     width: 100%;
 }
 
