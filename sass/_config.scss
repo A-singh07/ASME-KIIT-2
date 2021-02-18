@@ -49,22 +49,6 @@ body {
 
 .sidebar {
 
-
-  li {
-
-    &:hover {
-      background-color: $nav_hover;
-    }
-
-    p {
-      background-color: $nav_active_border;
-    }
-  }
-
-  .nav-li-active {
-    background-color: $nav_active;
-  }
-
   @media screen and (max-width: $laptop) {
     left: -100px;
 
