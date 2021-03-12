@@ -54,16 +54,16 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     let navTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#home",
-            start: "bottom 45%",
+            start: "bottom 30%",
             toggleActions: "play none none reverse",
             markers: true
         }
     });
 
     navTl
-        .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "0" })
-        .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "0" }, "-=0.5")
-        .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.15 }, "-=0.6");
+        // .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "20px" })
+        .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "15px" }, "-=0.5")
+        .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.1 }, "-=0.6");
 }
 
 
@@ -105,12 +105,12 @@ $(nav_ham).click(function () {
         nav.animate({ width: '16rem' }, 300);
     }
     else {
-
-        $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
-            sidebar_span.css("display", "inline");
-            nav_ham.hide();
-            nav_close.show();
-        });
+      nav_ham.hide();
+      nav_close.show();
+      $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
+        sidebar_span.css("display", "inline");
+            
+      });
 
         nav.animate({ width: '16rem' }, 300);
     }
