@@ -11,6 +11,28 @@
   scroll-behavior: smooth;
 }
 
+.modal {
+  width: 60vw;
+  height: 75vh;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+
+  .modal-content {
+    width: 60vw;
+    height: 75vh;
+    border-radius: 25px;
+  }
+
+  .modal-body {
+    font-size: 1.1rem;
+
+    a {
+      font-size: 2.5rem;
+    }
+  }
+}
+
 .blogpost_btn {
   width: 55px;
   height: 55px;
