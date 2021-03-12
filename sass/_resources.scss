@@ -17,10 +17,11 @@ $pc_grey: hsl(204, 30%, 80%); //PC
 
 
 $pc_bg_color: #f1f9fe;
+$pc_bg_color1: hsl(203, 87%, 99%);
 
 $pc_text: #163950;
 
-$bg_section: $pc_bg_color;
+$bg_section: $pc_bg_color1;
 // $main_container: #f7fbfc;
 
 
@@ -148,8 +149,8 @@ serif;
 // Rotis Semi Serif
 
 @font-face {
-    font-family: rotis_semi_serif;
-    src: url(../Assets/FONTS/RotisSemiSerifStd.otf);
+  font-family: rotis_semi_serif;
+  src: url(../Assets/FONTS/RotisSemiSerifStd.otf);
 }
 
 $font_rotis_head: rotis_semi_serif;
@@ -157,8 +158,8 @@ $font_rotis_head: rotis_semi_serif;
 // Rotis Serif
 
 @font-face {
-    font-family: rotis_serif;
-    src: url(../Assets/FONTS/RotisSerif.otf);
+  font-family: rotis_serif;
+  src: url(../Assets/FONTS/RotisSerif.otf);
 }
 
 $font_rotis: rotis_serif;
