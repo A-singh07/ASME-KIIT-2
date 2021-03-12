@@ -122,6 +122,10 @@ hr {
   // }
 
   .landing-cover {
+    @media screen and (max-width: $mobileL) {
+      height: 60vh;
+    }
+
     position: absolute;
     width: 100vw;
     height: 100vh;
