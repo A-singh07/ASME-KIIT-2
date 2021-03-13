@@ -34,24 +34,28 @@
 }
 
 .blogpost_btn {
-  width: 55px;
-  height: 55px;
-  position: absolute;
+  width: 75px;
+  height: 45px;
+  position: fixed;
   right: 0;
   bottom: 0;
-  background-color: black;
-  border-radius: 1000px;
+  background-color: $blog_btn;
+  border-radius: 50px;
   font-size: 1rem;
   z-index: 1500;
-  margin: 5px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  font-weight: bolder;
+  margin: 10px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   p {
-    padding-top: 13px;
+    padding: 0 !important;
+    margin: 0 !important;
     text-align: center;
-    color: blanchedalmond;
+    color: #ffebcd;
+    font-weight: bold;
   }
 }
 
@@ -61,19 +65,22 @@
   position: fixed;
   right: 0px;
   bottom: 0px;
-  background-color: black;
+  background-color: $mode_toggler;
   border-radius: 15px;
-  font-size: 1.1em;
+  font-size: 1rem;
   z-index: 1500;
-  margin: 5px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  font-weight: bolder;
+  margin: 10px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.6);
+  display: block;
+  padding: 10px;
   cursor: pointer;
 
   p {
-    padding-top: 5px;
+    margin: 0 !important;
+    padding: 0 !important;
     text-align: center;
-    color: blanchedalmond;
+    color: #ffebcd;
+    font-weight: bold;
   }
 }
 
@@ -312,8 +319,8 @@
 #team {
   height: 100vh;
   margin-bottom: 20px;
+  // background-color: burlywood;
 
-  /* background-color: burlywood; */
   h1 {
     text-align: center;
     font-weight: 500;
@@ -339,7 +346,7 @@
     box-shadow: 0px 2px 8px 0px $pc_shadow;
     // color: $pc_shade1;
     // background-color: $team_tabs;
-    background-color: transparent;
+    background-color: $pc_bg_color;
 
     &:hover {
       color: black;

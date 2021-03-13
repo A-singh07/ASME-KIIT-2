@@ -4,12 +4,12 @@ var toggler_p = $("#toggle-p");
 
 $(".mode-toggler").click(function () {
 
-    $("body, html").toggleClass("darkMode");
+  $("body, html").toggleClass("darkMode");
 
-    if (toggler_p.text() == "Go Dark")
-        toggler_p.text("Go Light");
-    else
-        toggler_p.text("Go Dark");
+  if (toggler_p.text() == "Go Dark")
+    toggler_p.text("Go Light");
+  else
+    toggler_p.text("Go Dark");
 });
 
 //  ------ scrollBar -------
@@ -27,19 +27,19 @@ $(".mode-toggler").click(function () {
 const tl = gsap.timeline();
 
 tl.to(".hide-text", {
-    y: "0%",
-    duration: 1.3,
-    stagger: 0.3,
-    ease: "back.out"
+  y: "0%",
+  duration: 1.3,
+  stagger: 0.3,
+  ease: "back.out"
 });
 tl.to(".intro-slider", {
-    y: "-100%",
-    duration: 1.5,
-    delay: 0.6
+  y: "-100%",
+  duration: 1.5,
+  delay: 0.6
 });
 tl.to(".intro", {
-    y: "-100%",
-    duration: 1
+  y: "-100%",
+  duration: 1
 }, "-=1");
 
 //Important -- till the final responsive layout is ready
@@ -51,20 +51,34 @@ tl.to(".intro", {
 
 if (window.matchMedia("(min-width: 768px)").matches) {
 
-    let navTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#home",
-            start: "bottom 30%",
-            toggleActions: "play none none reverse",
-            markers: true
-        }
-    });
+  let navTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#home",
+      start: "bottom 20%",
+      toggleActions: "play none none reverse",
+      markers: true
+    }
+  });
 
-    navTl
-        // .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "20px" })
-        .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "15px" }, "-=0.5")
-        .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.1 }, "-=0.6");
+  let blog_btn = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#home",
+      start: "bottom 15%",
+      toggleActions: "play none none reverse",
+      markers: true
+    }
+  });
+
+  navTl
+    .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "15px" }, "-=0.5")
+    .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.1 }, "-=0.6");
+  // .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "20px" });
+
+  blog_btn
+    .to(".blogpost_btn", { y: "-88vh", duration: 1, ease: "ease.out" })
+    .fromTo(".mode-toggler", { scale: "0" }, { scale: "1" }, "-=0.8")
 }
+
 
 
 // ----- NAVBAR
@@ -79,43 +93,43 @@ var nav_close = $("#nav-close");
 
 // Active Class in Nav
 $(".nav-li").click(function () {
-    $(this).prevAll().removeClass("nav-li-active");
-    $(this).nextAll().removeClass("nav-li-active");
-    $(this).addClass("nav-li-active");
+  $(this).prevAll().removeClass("nav-li-active");
+  $(this).nextAll().removeClass("nav-li-active");
+  $(this).addClass("nav-li-active");
 });
 
 // Nav Open
 $(nav_ham).click(function () {
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia("(max-width: 768px)").matches) {
 
-        $(sidebar).animate({ width: '100vw', left: '0' }, 300, function () {
-            sidebar_span.css("display", "inline");
-            nav_ham.hide();
-            nav_close.show();
-        });
-    }
-    else if (window.matchMedia("(max-width: 1024px)").matches) {
-
-        $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
-            sidebar_span.css("display", "inline");
-            nav_ham.hide();
-            nav_close.show();
-        });
-        nav.animate({ width: '16rem' }, 300);
-    }
-    else {
+    $(sidebar).animate({ width: '100vw', left: '0' }, 300, function () {
+      sidebar_span.css("display", "inline");
       nav_ham.hide();
       nav_close.show();
-      $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
-        sidebar_span.css("display", "inline");
-            
-      });
+    });
+  }
+  else if (window.matchMedia("(max-width: 1024px)").matches) {
 
-        nav.animate({ width: '16rem' }, 300);
-    }
+    $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
+      sidebar_span.css("display", "inline");
+      nav_ham.hide();
+      nav_close.show();
+    });
+    nav.animate({ width: '16rem' }, 300);
+  }
+  else {
+    nav_ham.hide();
+    nav_close.show();
+    $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
+      sidebar_span.css("display", "inline");
 
-    sidebar_i.css("width", "30%");
+    });
+
+    nav.animate({ width: '16rem' }, 300);
+  }
+
+  sidebar_i.css("width", "30%");
 
 });
 
@@ -123,46 +137,46 @@ $(nav_ham).click(function () {
 //Nav Close
 function navCloseFunc() {
 
-    sidebar_span.css("display", "none");
-    sidebar_i.css("width", "100%");
+  sidebar_span.css("display", "none");
+  sidebar_i.css("width", "100%");
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia("(max-width: 768px)").matches) {
 
-        $(sidebar).animate({ width: '70px', left: '-100px' }, 300, function () {
-            nav_ham.show();
-            nav_close.hide();
-        });
-    }
-    else if (window.matchMedia("(max-width: 1024px)").matches) {
+    $(sidebar).animate({ width: '70px', left: '-100px' }, 300, function () {
+      nav_ham.show();
+      nav_close.hide();
+    });
+  }
+  else if (window.matchMedia("(max-width: 1024px)").matches) {
 
-        $(sidebar).animate({ width: '0', left: '-100px' }, 300, function () {
-            nav_ham.show();
-            nav_close.hide();
-        });
-        nav.animate({ width: '70px' }, 300);
-    }
-    else {
-        $(sidebar).animate({ width: '70px', left: '0' }, 300, function () {
-            nav_ham.show();
-            nav_close.hide();
-        });
+    $(sidebar).animate({ width: '0', left: '-100px' }, 300, function () {
+      nav_ham.show();
+      nav_close.hide();
+    });
+    nav.animate({ width: '70px' }, 300);
+  }
+  else {
+    $(sidebar).animate({ width: '70px', left: '0' }, 300, function () {
+      nav_ham.show();
+      nav_close.hide();
+    });
 
-        nav.animate({ width: '70px' }, 300);
-    }
+    nav.animate({ width: '70px' }, 300);
+  }
 }
 $(nav_close).click(function () {
-    navCloseFunc();
+  navCloseFunc();
 });
 
 $(".nav-li").click(function () {
-    navCloseFunc();
+  navCloseFunc();
 });
 
 $("section").click(function () {
-    navCloseFunc();
+  navCloseFunc();
 });
 $(".landing-cover").click(function () {
-    navCloseFunc();
+  navCloseFunc();
 })
 
 // ----- Achievements
@@ -207,37 +221,37 @@ $(".landing-cover").click(function () {
 // ----- OUR TEAM
 
 $(".tabs").click(function () {
-    $(this).prevAll().removeClass("tab-active");
-    $(this).nextAll().removeClass("tab-active");
-    $(this).addClass("tab-active");
+  $(this).prevAll().removeClass("tab-active");
+  $(this).nextAll().removeClass("tab-active");
+  $(this).addClass("tab-active");
 });
 
 function activeCont(cont) {
-    $(".t-content").removeClass("t-content-active");
-    $("#" + cont).addClass("t-content-active");
+  $(".t-content").removeClass("t-content-active");
+  $("#" + cont).addClass("t-content-active");
 }
 
 
 // ----- GALLERY
 
 var swiper = new Swiper('.swiper-container', {
-    observer: true,
-    observeParents: true,
-    effect: 'coverflow',
-    grabCursor: true,
-    loop: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
-    coverflowEffect: {
-        rotate: 180,
-        stretch: 0,
-        depth: 260,
-        modifier: 2,
-        slideShadows: true,
-    }
+  observer: true,
+  observeParents: true,
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  coverflowEffect: {
+    rotate: 180,
+    stretch: 0,
+    depth: 260,
+    modifier: 2,
+    slideShadows: true,
+  }
 
 });
