@@ -1,29 +1,22 @@
 /* ---------- Color Themes ----------- */
 
-/* --- BLUE THEME --- */
-
-// $primary_color: #5093c0; //PC
+// ------------------------------------------
 $primary_color: hsl(204, 55%, 60%); //PC
 $pc_shade1: hsl(207, 100%, 92%);
 $pc_shade2: hsl(207, 75%, 85%);
 $pc_shade3: hsl(204, 57%, 80%);
-
 $pc_shade4: hsl(204, 40%, 40%);
-
 $pc_shadow: hsl(204, 30%, 82%);
 $pc_shadow2: hsl(204, 40%, 72%);
-
 $pc_grey: hsl(204, 30%, 80%); //PC
-
-
 $pc_bg_color: #f1f9fe;
 $pc_bg_color1: hsl(203, 87%, 99%);
 
 $pc_text: #163950;
+// -----------------------------------------
 
 $bg_section: $pc_bg_color1;
 // $main_container: #f7fbfc;
-
 
 $intro: #1b262c;
 $intro_slider: #b9d7ea;
@@ -33,6 +26,9 @@ $scroll_thumb_hover: #75b3dd;
 
 $landing_cover: rgba(178, 217, 230, 0.5); //skyBlue with alpha 0.5
 $bg_text-one: rgba(178, 217, 230, 0.95); //skyBLue with alpha 0.95
+
+$mode_toggler: #163950;
+$blog_btn: #163950;
 
 $h1_bg: #afd2e9;
 $abt_bg: #ebf4fa;
@@ -93,8 +89,10 @@ $drk_hr: 10px dotted #4f3e64;
 
 $drk_section_shadows: -2px -2px 20px 2px #6f2a94 inset;
 
-$drk_darkMode_button: #272727;
-$drk_darkMode_button_hover: #3d3d3d;
+$drk_darkMode_button: #ffebcd;
+$drk_darkMode_button_font: #272727;
+$drk_darkMode_button_hover: #f8ce8f;
+// $drk_darkMode_button_hover: #3d3d3d;
 
 $drk_nav_top:#68089c;
 $drk_ham_close: white;
