@@ -6,117 +6,117 @@
 /* ----- Sponsors ----- */
 
 .sponsors {
-    width: 100%;
+  width: 100%;
 
-    /* background-color: aqua; */
-    h1 {
-        text-align: center;
-        font-weight: 500;
-    }
+  /* background-color: aqua; */
+  h1 {
+    text-align: center;
+    font-weight: 500;
+  }
 }
 
 .sponsors-wrapper {
-    height: 70%;
-    margin: 30px auto;
-    border-radius: 1.5rem;
+  height: 70%;
+  margin: 30px auto;
+  border-radius: 1.5rem;
 }
 
 .sponsors-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    margin-top: 20px;
-    padding: 30px;
-    overflow: auto;
-    /* background-color: #ff002d; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  margin-top: 20px;
+  padding: 30px;
+  overflow: auto;
+  /* background-color: #ff002d; */
 }
 
 .flex-container {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    /* margin-top: 10px; */
-    align-self: center;
-    justify-self: center;
-    /* padding: 20px; */
-    /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  /* margin-top: 10px; */
+  align-self: center;
+  justify-self: center;
+  /* padding: 20px; */
+  /* background-color: aquamarine; */
 }
 
 .brand_image {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 10%;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 10%;
 }
 
 .brand_image:hover {
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 
 /* ---- footer ---- */
 
 .site-footer {
-    font-size: 15px;
-    color: #737373;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px 0px;
+  font-size: 15px;
+  color: #737373;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px 0px;
 
-    h6 {
-        /* color:#1b262c; */
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        padding-top: 30px;
-    }
+  h6 {
+    /* color:#1b262c; */
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 30px;
+  }
 }
 
 #footer-logo {
-    width: 200px;
-    padding: 10px;
-    text-align: left;
-    // background-color: lightgreen;
+  width: 200px;
+  padding: 10px;
+  text-align: left;
+  // background-color: lightgreen;
 
-    img {
-        width: 160px;
-        height: auto;
-        box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
-        // background-color: crimson;
-    }
+  img {
+    width: 160px;
+    height: auto;
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    // background-color: crimson;
+  }
 }
 
 .foothr {
-    margin: auto;
-    padding: 5px;
-    border: 0;
-    box-shadow: 0 5px 8px 0px #8c8b8b inset;
-    margin: 10px 0 0 0;
-    border-radius: 2em;
-    width: 100%;
+  margin: auto;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0 5px 8px 0px #8c8b8b inset;
+  margin: 10px 0 0 0;
+  border-radius: 2em;
+  width: 100%;
 }
 
 .designers {
-    /* color: black; */
-    margin-left: 30px;
+  /* color: black; */
+  margin-left: 30px;
 }
 
 #designer-footer {
-    /* background-color: burlywood; */
-    padding-left: 4rem;
+  /* background-color: burlywood; */
+  padding-left: 4rem;
 }
 
 div {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h6 {
-    margin: 10px;
+  margin: 10px;
 }
 
 .mailid {
-    font-size: 1.2em;
-    transition: 0.3s ease;
-    cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 
@@ -130,3 +130,82 @@ h6 {
   background-color:white;
   color: #a6d3e2;
 } */
+
+
+.profilecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.profilecard {
+  order: 6;
+
+  height: 220px;
+  width: 220px;
+
+  margin: 20px;
+  border-radius: 1rem;
+
+}
+
+
+.profilecard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.profilecard:hover .profilecard-inner {
+  transform: rotateY(180deg);
+}
+
+.profilecard-front,
+.profilecard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.profilecard-front {
+
+  color: black;
+
+}
+
+.profilecard-front h3 {
+  background-color: #0000009e;
+
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 20px;
+}
+
+.profilecard-back {
+  background-color: #ecfaff;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  border-radius: 1rem;
+
+}
+
+.profimg {
+  border-radius: 1rem;
+}
+
+
+.profilecard-back h2 {
+  padding-top: 20px;
+  color: #000;
+}
