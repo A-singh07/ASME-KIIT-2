@@ -5,6 +5,16 @@ body {
   font-family: $font1;
 }
 
+.mobile-only {
+  display: block;
+}
+
+@media screen and (min-width: $mobileL) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 .landing-slider {
   .text-one {
     font-family: $font_rotis_head;
