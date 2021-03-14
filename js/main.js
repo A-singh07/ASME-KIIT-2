@@ -12,22 +12,22 @@ $(".mode-toggler").click(function () {
     toggler_p.text("Go Dark");
 });
 
-const options = {
-  bottom: '64px', // default: '32px'
-  right: 'unset', // default: '32px'
-  left: '32px', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
-}
+// const options = {
+//   bottom: '64px', // default: '32px'
+//   right: 'unset', // default: '32px'
+//   left: '32px', // default: 'unset'
+//   time: '0.5s', // default: '0.3s'
+//   mixColor: '#fff', // default: '#fff'
+//   backgroundColor: '#fff',  // default: '#fff'
+//   buttonColorDark: '#100f2c',  // default: '#100f2c'
+//   buttonColorLight: '#fff', // default: '#fff'
+//   saveInCookies: false, // default: true,
+//   label: '🌓', // default: ''
+//   autoMatchOsTheme: true // default: true
+// }
 
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+// const darkmode = new Darkmode(options);
+// darkmode.showWidget();
 
 //  ------ scrollBar -------
 
@@ -280,18 +280,18 @@ $(".nav-li").on("click", function (e) {
   $(".atg-ripple").remove();
 
   var posX = $(this).offset().left,
-      posY = $(this).offset().top,
-      buttonWidth = $(this).width(),
-      buttonHeight =  $(this).height();
-  
+    posY = $(this).offset().top,
+    buttonWidth = $(this).width(),
+    buttonHeight = $(this).height();
+
   $(this).prepend("<span class='atg-ripple'></span>");
 
-  if(buttonWidth >= buttonHeight) {
+  if (buttonWidth >= buttonHeight) {
     buttonHeight = buttonWidth;
   } else {
-    buttonWidth = buttonHeight; 
+    buttonWidth = buttonHeight;
   }
-  
+
   var x = e.pageX - posX - buttonWidth / 2;
   var y = e.pageY - posY - buttonHeight / 2;
 
