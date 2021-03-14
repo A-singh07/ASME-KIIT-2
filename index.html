@@ -29,13 +29,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
     <!--Swiper.css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -85,42 +78,6 @@
 
     <div id="mother-container">
 
-
-
-        <!-- Modal -->
-        <div class="modal fade " id="joinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="col-12 modal-title text-center" id="exampleModalLabel">JOIN US</h3>
-                    </div>
-                    <div class="col-12 modal-body text-center">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolores vero tempora, perferendis
-                        hic voluptate impedit doloremque maiores quidem! Natus esse, sapiente voluptate quasi fuga odit
-                        sequi adipisci assumenda dignissimos temporibus possimus corporis, ratione magni voluptatum
-                        veniam laborum dolores mollitia et aperiam voluptates, veritatis reprehenderit suscipit soluta?
-                        Perferendis, dolore eveniet doloribus distinctio explicabo ipsam similique consequuntur vitae
-                        perspiciatis, excepturi animi est quidem aliquid! Dolores, ullam quam suscipit mollitia
-                        doloremque tenetur tempore, officiis repudiandae doloribus porro minus assumenda, vel commodi
-                        aperiam natus voluptas iusto sed debitis aspernatur cumque quisquam autem libero? Exercitationem
-                        fugiat, hic quos pariatur tenetur cum ratione deleniti tempora neque, eveniet officia officiis
-                        nulla magnam praesentium maxime sint dolorum voluptatibus, temporibus repudiandae! Nesciunt,
-                        assumenda inventore repellat beatae, accusantium architecto eos sequi voluptatibus, dolores odio
-                        velit eligendi atque quos libero quibusdam ut obcaecati maxime mollitia omnis voluptas eius!
-                        Accusantium, maiores ipsum dolor, adipisci nihil voluptas sequi rem quaerat corporis
-                        perspiciatis saepe eveniet, quos ab ad unde possimus atque. Ab quo itaque, aliquam blanditiis
-                        eos error nemo ipsam voluptate id eum dicta. Eius dolorem nam ipsa asperiores amet harum atque
-                        quos magni eum perspiciatis cum exercitationem iste consectetur nostrum, temporibus quaerat
-                        dolore ratione quis sit iusto saepe? Cupiditate accusamus maiores corrupti. <br><br><br>
-                        <a href="https://docs.google.com/forms/d/1ekeYTtdjgotqSoClN3Rr9c2cfrAhgJ2yzIVEVRy07JU/edit">
-                            click here</a>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- <div class="blogpost_btn">
             <p id="bp_btn">Blogs</p>
         </div> -->
@@ -158,9 +115,15 @@
         </div>
         <!-- XX---Landing Page---XX -->
 
-        <!-- Side Nav -->
-
-
+        <!-- Mobile Top-Nav-->
+        <div class="nav-mobile-top">
+            <p>ASME-KIIT</p>
+        </div>
+        <div id="nav-mobile">
+            <i id="hamburger-mob" class="fas fa-bars"></i>
+            <i id="nav-close-mob" class="fa fa-times"></i>
+        </div>
+        <!-- Destop SideNav -->
         <div class="sidebar" id="sidebar">
             <div id="nav">
                 <i id="hamburger" class="fas fa-bars"></i>
@@ -238,6 +201,41 @@
                     <p></p>
                 </li>
             </ul>
+        </div>
+
+        <!-- Join Modal -->
+        <div class="modal fade " id="joinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="col-12 modal-title text-center" id="exampleModalLabel">JOIN US</h3>
+                    </div>
+                    <div class="col-12 modal-body text-center">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolores vero tempora, perferendis
+                        hic voluptate impedit doloremque maiores quidem! Natus esse, sapiente voluptate quasi fuga odit
+                        sequi adipisci assumenda dignissimos temporibus possimus corporis, ratione magni voluptatum
+                        veniam laborum dolores mollitia et aperiam voluptates, veritatis reprehenderit suscipit soluta?
+                        Perferendis, dolore eveniet doloribus distinctio explicabo ipsam similique consequuntur vitae
+                        perspiciatis, excepturi animi est quidem aliquid! Dolores, ullam quam suscipit mollitia
+                        doloremque tenetur tempore, officiis repudiandae doloribus porro minus assumenda, vel commodi
+                        aperiam natus voluptas iusto sed debitis aspernatur cumque quisquam autem libero? Exercitationem
+                        fugiat, hic quos pariatur tenetur cum ratione deleniti tempora neque, eveniet officia officiis
+                        nulla magnam praesentium maxime sint dolorum voluptatibus, temporibus repudiandae! Nesciunt,
+                        assumenda inventore repellat beatae, accusantium architecto eos sequi voluptatibus, dolores odio
+                        velit eligendi atque quos libero quibusdam ut obcaecati maxime mollitia omnis voluptas eius!
+                        Accusantium, maiores ipsum dolor, adipisci nihil voluptas sequi rem quaerat corporis
+                        perspiciatis saepe eveniet, quos ab ad unde possimus atque. Ab quo itaque, aliquam blanditiis
+                        eos error nemo ipsam voluptate id eum dicta. Eius dolorem nam ipsa asperiores amet harum atque
+                        quos magni eum perspiciatis cum exercitationem iste consectetur nostrum, temporibus quaerat
+                        dolore ratione quis sit iusto saepe? Cupiditate accusamus maiores corrupti. <br><br><br>
+                        <a href="https://docs.google.com/forms/d/1ekeYTtdjgotqSoClN3Rr9c2cfrAhgJ2yzIVEVRy07JU/edit">
+                            click here</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- XX---Side Nav---XX -->
@@ -927,26 +925,23 @@
         <footer class="site-footer" id="contact">
             <div class="container">
                 <div class="row">
-                    <div id="footer-logo" class="col-xs-12 col-md-4">
+                    <div id="footer-logo" class="col-12 col-md-4">
 
                         <img src="./Assets/ASME-logo.jpeg" alt="Asme Kiit Logo">
 
                     </div>
-                    <div id="reach-footer" class="col-xs-12 col-md-4">
+                    <div id="reach-footer" class="col-12 col-md-4">
                         <h6>REACH OUT TO US</h6>
-                        <ul>
-                            <a target="_blank" href="https://instagram.com/asme_kiit"> <i
-                                    class="fab fa-instagram  fa-3x " style=" margin:15px; font-size:2'.3'em"></i></a>
-
-
-                            <a target="_blank" href="https://in.linkedin.com/company/kiit-asme"> <i
-                                    class="fab fa-linkedin fa-3x " style=" margin:15px; font-size:2.3m"></i></a>
-                            <li style="margin:5px">
-                                <h5 class="mailid"><i class="fas fa-envelope "></i>-teamketav2020@gmail.com</h5>
-                        </ul>
+                        <a target="_blank" href="https://instagram.com/asme_kiit">
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </a>
+                        <a target="_blank" href="https://in.linkedin.com/company/kiit-asme">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                        <h5 class="mailid"><i class="fas fa-envelope "></i> &nbsp; teamketav2020@gmail.com</h5>
                     </div>
 
-                    <div class="col-xs-12 col-md-4" id="designer-footer">
+                    <div id="designer-footer" class="col-12 col-md-4">
                         <h6>Website Designed By</h6>
                         <ul class="designers">
 
@@ -977,15 +972,14 @@
 
             <div class="container" id="copyright">
                 <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-6 col-12">
                         <div class="text-center p-3">
                             © 2020 Copyright:
                             <a>ASME KIIT </a>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12"></div>
                     </div>
                 </div>
+            </div>
         </footer>
 
         <!-- XX---Footer---XX -->
@@ -999,23 +993,15 @@
     <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Bootstrap Script -->
+    <!-- Bootstrapv5 Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
 
     <!--Swiper.js-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
         integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
         crossorigin="anonymous"></script> -->
-
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

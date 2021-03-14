@@ -66,7 +66,7 @@ tl.to(".intro", {
 
 // tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 
-if (window.matchMedia("(min-width: 768px)").matches) {
+if (window.matchMedia("(min-width: 800px)").matches) {
 
   let navTl = gsap.timeline({
     scrollTrigger: {
@@ -93,7 +93,22 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
   blog_btn
     .to(".blogpost_btn", { y: "-88vh", duration: 1, ease: "ease.out" })
-    .fromTo(".mode-toggler", { scale: "0" }, { scale: "1" }, "-=0.8")
+    .fromTo(".mode-toggler", { scale: "0" }, { scale: "1" }, "-=0.8");
+}
+else if (window.matchMedia("(max-width: 768px)").matches) {
+  let navTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#home",
+      start: "bottom 40%",
+      toggleActions: "play none none reverse",
+      markers: true
+    }
+  });
+
+  navTl
+    .fromTo(".nav-mobile-top", { y: "-100%", autoAlpha: 0 }, { y: "0px", autoAlpha: 1 })
+    .fromTo("#nav-mobile", { autoAlpha: 0 }, { autoAlpha: 1 })
+
 }
 
 
@@ -105,6 +120,8 @@ var sidebar_i = $(".sidebar li i");
 var sidebar_span = $(".sidebar li span");
 var nav = $("#nav");
 var nav_ham = $("#hamburger");
+var nav_ham_mob = $("#hamburger-mob");
+var nav_close_mob = $("#nav-close-mob");
 var nav_close = $("#nav-close");
 
 
@@ -118,15 +135,7 @@ $(".nav-li").click(function () {
 // Nav Open
 $(nav_ham).click(function () {
 
-  if (window.matchMedia("(max-width: 768px)").matches) {
-
-    $(sidebar).animate({ width: '100vw', left: '0' }, 300, function () {
-      sidebar_span.css("display", "inline");
-      nav_ham.hide();
-      nav_close.show();
-    });
-  }
-  else if (window.matchMedia("(max-width: 1024px)").matches) {
+  if (window.matchMedia("(max-width: 1024px)").matches) {
 
     $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
       sidebar_span.css("display", "inline");
@@ -140,7 +149,6 @@ $(nav_ham).click(function () {
     nav_close.show();
     $(sidebar).animate({ width: '16rem', left: '0' }, 300, function () {
       sidebar_span.css("display", "inline");
-
     });
 
     nav.animate({ width: '16rem' }, 300);
@@ -149,9 +157,23 @@ $(nav_ham).click(function () {
   sidebar_i.css("width", "30%");
 
 });
+// Nav-mob-open
+$(nav_ham_mob).click(function () {
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+
+    $(sidebar).animate({ width: '100vw', left: '0' }, 300, function () {
+      sidebar_span.css("display", "inline");
+      nav_ham_mob.hide();
+      nav_close_mob.show();
+    });
+    $("body").addClass("modal-open");  // bootstrap 5 cdn dependent
+  }
+  sidebar_i.css("width", "30%");
+});
 
 
-//Nav Close
+//Nav Close Func
 function navCloseFunc() {
 
   sidebar_span.css("display", "none");
@@ -160,9 +182,10 @@ function navCloseFunc() {
   if (window.matchMedia("(max-width: 768px)").matches) {
 
     $(sidebar).animate({ width: '70px', left: '-100px' }, 300, function () {
-      nav_ham.show();
-      nav_close.hide();
+      nav_ham_mob.show();
+      nav_close_mob.hide();
     });
+    $("body").removeClass("modal-open");  // bootstrap 5 cdn dependent
   }
   else if (window.matchMedia("(max-width: 1024px)").matches) {
 
@@ -182,6 +205,9 @@ function navCloseFunc() {
   }
 }
 $(nav_close).click(function () {
+  navCloseFunc();
+});
+$(nav_close_mob).click(function () {
   navCloseFunc();
 });
 

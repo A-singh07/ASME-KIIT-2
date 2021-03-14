@@ -67,48 +67,92 @@
   color: #737373;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
   padding: 20px 0px;
+  background-color: $footer;
+
+  a {
+    color: $footer_a;
+  }
 
   h6 {
-    /* color:#1b262c; */
+    color: black;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-top: 30px;
   }
-}
 
-#footer-logo {
-  width: 200px;
-  padding: 10px;
-  text-align: left;
-  // background-color: lightgreen;
+  #footer-logo {
+    // width: 200px;
+    padding: 10px;
+    text-align: center;
+    // background-color: lightsalmon;
 
-  img {
-    width: 160px;
-    height: auto;
-    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
-    // background-color: crimson;
+    img {
+      width: 160px;
+      height: auto;
+      box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    @media screen and (max-width: $mobileL) {
+      img {
+        width: 130px;
+      }
+    }
   }
-}
 
-.foothr {
-  margin: auto;
-  padding: 5px;
-  border: 0;
-  box-shadow: 0 5px 8px 0px #8c8b8b inset;
-  margin: 10px 0 0 0;
-  border-radius: 2em;
-  width: 100%;
-}
+  #reach-footer {
+    text-align: center;
+    // background-color: lightpink;
 
-.designers {
-  /* color: black; */
-  margin-left: 30px;
-}
+    h6 {
+      margin-bottom: 25px;
+    }
 
-#designer-footer {
-  /* background-color: burlywood; */
-  padding-left: 4rem;
+    a {
+      text-decoration: none;
+      margin: 10px;
+      font-size: 0.6rem;
+    }
+
+    .mailid {
+      color: black;
+      margin-top: 20px;
+      font-size: 1.2em;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: lighten($pc_text, 5);
+      }
+    }
+  }
+
+  #designer-footer {
+    // background-color: burlywood;
+    padding-left: 4rem;
+
+    .designers {
+      margin-left: 30px;
+
+      li a {
+        text-decoration: none;
+
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .foothr {
+    margin: auto;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0 5px 8px 0px #8c8b8b inset;
+    margin: 10px 0 0 0;
+    border-radius: 2em;
+    width: 100%;
+  }
 }
 
 div {
@@ -120,13 +164,6 @@ h6 {
   margin: 10px;
 }
 
-.mailid {
-  font-size: 1.2em;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-
 /* .fab .fa-linkedin .fa-3x .insta:hover
 {
   color:white;
@@ -137,7 +174,6 @@ h6 {
   background-color:white;
   color: #a6d3e2;
 } */
-
 
 .profilecontainer {
   display: flex;

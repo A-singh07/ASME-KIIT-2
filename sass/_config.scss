@@ -6,12 +6,12 @@ body {
 }
 
 .mobile-only {
-  display: block;
+  display: none;
 }
 
-@media screen and (min-width: $mobileL) {
+@media screen and (max-width: $tablet) {
   .mobile-only {
-    display: none;
+    display: block;
   }
 }
 
@@ -37,54 +37,64 @@ body {
   #nav-close {
     color: $ham_close;
   }
-
-  // @media screen and (max-width: $laptop) {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   width: 70px;
-  //   // border-bottom-right-radius: 2rem;
-  // }
-
-  @media screen and (max-width: $tablet) {
-    width: 65px;
-    position: absolute;
-
-    i {
-      background-color: $primary_color;
-    }
-  }
-
 }
+
+
 
 .sidebar {
 
-  @media screen and (max-width: $laptop) {
-    left: -100px;
+  @media screen and (max-width: $tablet) {
+
+    // width: 100vw;
+    top: 0;
+    left: -80px;
+    bottom: 0;
 
     ul {
       margin-top: 60px;
+      height: 90%;
+      overflow-y: scroll;
+
+      li {
+        margin: 0 50px 0 20px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        a {
+
+          i {
+            width: 25% !important;
+          }
+
+          span {
+            text-align: right;
+            // display: inline;
+          }
+        }
+      }
+    }
+
+    #nav {
+      display: none;
     }
   }
 
-  @media screen and (max-width: $mobileL) {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-
+  @media screen and (min-width: $mobileL) and (max-width: $tablet) {
     ul {
-      width: 70%;
-      margin: auto;
-      margin-top: 60px;
+      margin-top: 75px;
 
       li {
-        padding: 10px 0;
+        margin: 0 70px 0 50px;
 
-        span {
-          font-size: 1em;
-        }
+        a {
+          i {
+            width: 20% !important;
+            font-size: 2rem;
+          }
 
-        i {
-          font-size: 1.2em;
+          span {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -128,7 +138,6 @@ section {
       @media screen and (max-width: $mobileL) {
         .gallery-shadow {
           width: 100%;
-          border-radius: 2em;
         }
 
         .swiper-container {
@@ -203,7 +212,6 @@ section {
         .content-container {
           width: 100%;
           padding: 15px;
-          border-radius: 2em;
 
           .t-content {
             overflow-x: auto;
@@ -276,7 +284,6 @@ section {
 
         .sponsors-wrapper {
           width: 100%;
-          border-radius: 2em;
 
           .sponsors-container {
             padding: 30px 10px;
@@ -300,27 +307,19 @@ section {
 }
 
 .site-footer {
-  background-color: $footer;
-
-  h6 {
-    color: black;
-  }
 
   .designers {
     color: black;
   }
 
   .mailid {
-    color: black;
 
     &:hover {
       color: grey;
     }
   }
 
-  a {
-    color: $footer_a;
-  }
+  a {}
 
   @media screen and (max-width: $tablet) {
     padding-left: 0;

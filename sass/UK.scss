@@ -11,28 +11,29 @@
   scroll-behavior: smooth;
 }
 
-.joinModal-open {
-  overflow: hidden !important;
-}
-
 .modal {
-  // width: 60vw;
-  // height: 75vh;
-  // position: absolute;
-  // left: 20%;
-  // top: 10%;
+
+  .modal-dialog {
+    max-width: 700px !important;
+  }
 
   .modal-content {
-    width: 60vw;
     height: 75vh;
-    border-radius: 25px;
+    border-radius: 18px !important;
   }
 
   .modal-body {
     font-size: 1.1rem;
 
     a {
-      font-size: 2.5rem;
+      font-size: 2rem;
+    }
+  }
+
+  .modal-footer {
+    button {
+      border: none;
+      background-color: $primary_color;
     }
   }
 }
@@ -157,6 +158,86 @@
 
 /* -------- SIDE-NAV --------- */
 
+.nav-mobile-top {
+  display: none;
+  opacity: 0;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: $nav_top;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0 !important;
+    color: white;
+    font-size: 1.5rem;
+    font-family: $font_rotis_head;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: flex !important;
+  }
+
+  @media screen and (min-width: $mobileL) and (max-width: $tablet) {
+    height: 75px;
+  }
+}
+
+#nav-mobile {
+  display: none !important;
+  position: fixed !important;
+  visibility: hidden;
+  opacity: 0;
+  top: 5px;
+  right: 10px;
+  border-radius: 0 !important;
+  border-radius: 8px !important;
+  width: 55px !important;
+  height: 50px !important;
+  border: 1px solid $pc_shade3;
+  @extend #nav;
+
+  i {
+    font-size: 1.8em !important;
+    padding: 8px 9px;
+    // background-color: lightcoral;
+  }
+
+  #hamburger-mob {
+    /* background-color: bisque; */
+    display: block;
+    color: $ham_close;
+  }
+
+  #nav-close-mob {
+    /* background-color: burlywood; */
+    margin: 0px !important;
+    display: none;
+    color: $ham_close;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: flex !important;
+  }
+
+  @media screen and (min-width: $mobileL) and (max-width: $tablet) {
+    width: 100px;
+    top: 8px;
+    right: 10px;
+    width: 65px !important;
+    height: 60px !important;
+
+    i {
+      font-size: 2em !important;
+    }
+  }
+}
+
 #nav {
   // position: fixed;
   // top: 20px;
@@ -191,8 +272,8 @@
 }
 
 .sidebar {
-  visibility: none;
-  opacity: 0;
+  // visibility: none;
+  opacity: 1;
   position: fixed;
   overflow: hidden;
   left: 0px; // to be set through gsap
@@ -494,7 +575,7 @@
   display: none;
 }
 
-@media screen and (max-width:$mobileL) {
+@media screen and (max-width:$tablet) {
 
   #gallery {
     margin-bottom: 0;
@@ -514,7 +595,7 @@
       background-color: $mode_toggler;
       border-radius: 15px;
       font-size: 1rem;
-      z-index: 1500;
+      z-index: 100;
       margin-top: 60px;
       box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.6);
       display: block;
@@ -588,7 +669,7 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   transform: scale(0);
   position: absolute;
   opacity: 1;
