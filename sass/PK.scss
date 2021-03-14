@@ -8,6 +8,11 @@
 
 .sponsors {
   width: 100%;
+  margin-top: 30px;
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 00px;
+  }
 
   /* background-color: aqua; */
   h1 {
@@ -29,6 +34,7 @@
   margin-top: 20px;
   padding: 30px;
   overflow: auto;
+
   /* background-color: #ff002d; */
 }
 

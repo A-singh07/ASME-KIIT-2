@@ -496,14 +496,21 @@
 
 @media screen and (max-width:$mobileL) {
 
+  #gallery {
+    margin-bottom: 0;
+  }
+
+  #team_bottom_hr {
+    margin-top: 120px;
+  }
+
   .team {
-    position: relative;
 
     .more-team-images_btn {
       width: 60px;
       position: absolute;
-      right: 2%;
-      top: 380px;
+      right: 42%;
+      bottom: 5%;
       background-color: $mode_toggler;
       border-radius: 15px;
       font-size: 1rem;
@@ -525,7 +532,7 @@
   }
 
   .content-container {
-    height: 60vh;
+    height: 85vh;
     position: relative;
 
     .mobile-only {
@@ -543,21 +550,23 @@
         }
 
         .team-heads-img {
-          width: 200px;
-          height: 100px;
-          background-color: black;
+          width: 150px;
+          height: 150px;
           margin: 20px;
           position: relative;
 
           h5 {
             position: absolute;
-            left: 50px;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
           }
 
           img {
-            width: 200px;
-            height: 100px;
-            padding: 0;
+            border-radius: 1.5em;
+            width: 150px;
+            height: 150px;
+
           }
         }
       }
