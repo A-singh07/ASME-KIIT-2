@@ -87,8 +87,8 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   });
 
   navTl
-    .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "15px" }, "-=0.5")
-    .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.1 }, "-=0.6");
+    .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "15px" }, "-=0.5");
+  // .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.1 }, "-=0.6");
   // .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "20px" });
 
   blog_btn
@@ -277,14 +277,14 @@ var swiper = new Swiper('.swiper-container', {
 
 $(".nav-li").on("click", function (e) {
 
-  $(".atg-ripple").remove();
+  $(".ripple").remove();
 
   var posX = $(this).offset().left,
     posY = $(this).offset().top,
     buttonWidth = $(this).width(),
     buttonHeight = $(this).height();
 
-  $(this).prepend("<span class='atg-ripple'></span>");
+  $(this).prepend("<span class='ripple'></span>");
 
   if (buttonWidth >= buttonHeight) {
     buttonHeight = buttonWidth;
@@ -295,11 +295,11 @@ $(".nav-li").on("click", function (e) {
   var x = e.pageX - posX - buttonWidth / 2;
   var y = e.pageY - posY - buttonHeight / 2;
 
-  $(".atg-ripple").css({
+  $(".ripple").css({
     width: buttonWidth,
     height: buttonHeight,
     top: y + 'px',
     left: x + 'px'
-  }).addClass("atg-rippleEffect");
+  }).addClass("rippleEffect");
 });
 

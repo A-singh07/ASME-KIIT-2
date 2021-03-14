@@ -568,7 +568,7 @@
 
 // RIPPLE EFFECT
 
-.atg-ripple {
+.ripple {
   width: 0;
   height: 0;
   border-radius: 50%;
@@ -578,7 +578,7 @@
   opacity: 1;
 }
 
-.atg-rippleEffect {
+.rippleEffect {
   -webkit-animation: atgrippleDrop .6s linear;
   -moz-animation: atgrippleDrop .6s linear;
   -o-animation: atgrippleDrop .6s linear;
