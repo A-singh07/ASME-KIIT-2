@@ -222,6 +222,7 @@
       transition: 0.3s ease;
       margin: 0;
       position: relative;
+      overflow: hidden;
       // background-color: blueviolet;
 
       &:hover {
@@ -581,36 +582,36 @@
 }
 
 .rippleEffect {
-  -webkit-animation: atgrippleDrop .6s linear;
-  -moz-animation: atgrippleDrop .6s linear;
-  -o-animation: atgrippleDrop .6s linear;
-  animation: atgrippleDrop .6s linear;
+  -webkit-animation: rippleDrop .6s linear;
+  -moz-animation: rippleDrop .6s linear;
+  -o-animation: rippleDrop .6s linear;
+  animation: rippleDrop .6s linear;
 }
 
-@-webkit-keyframes atgrippleDrop {
+@-webkit-keyframes rippleDrop {
   100% {
-    transform: scale(2);
+    transform: scale(4);
     opacity: 0;
   }
 }
 
-@-moz-keyframes atgrippleDrop {
+@-moz-keyframes rippleDrop {
   100% {
-    transform: scale(2);
+    transform: scale(4);
     opacity: 0;
   }
 }
 
-@-o-keyframes atgrippleDrop {
+@-o-keyframes rippleDrop {
   100% {
-    transform: scale(2);
+    transform: scale(4);
     opacity: 0;
   }
 }
 
-@keyframes atgrippleDrop {
+@keyframes rippleDrop {
   100% {
-    transform: scale(2);
+    transform: scale(4);
     opacity: 0;
   }
 }
