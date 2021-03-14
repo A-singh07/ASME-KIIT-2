@@ -233,6 +233,11 @@ hr {
         // background-color: yellow;
         margin-bottom: 20px;
 
+        @media only screen and (max-width: 991px) {
+          margin-bottom: 0;
+          padding-top: 0;
+        }
+
         #achievements-wrapper {
           height: 80%;
           border-radius: 1.5rem;
@@ -449,6 +454,7 @@ hr {
             }
 
             @media only screen and (max-width: 991px) {
+
               .main-timeline {
 
                 .timeline {
