@@ -116,6 +116,7 @@ hr {
 #mother-container {
   // position: relative;
   display: block;
+  overflow-x: hidden;
 
   // @media screen and (max-width: $tablet) {
   //     display: none;
@@ -154,10 +155,14 @@ hr {
     }
 
     @media screen and (max-width: $tablet) {
-      width: 4rem;
-      top: 3px;
-      right: 20px;
+      width: 75px;
+      top: 5px;
+      left: 10px;
       padding: 0;
+    }
+
+    @media screen and (min-width: $mobileL) and (max-width: $tablet) {
+      width: 100px;
     }
   }
 
@@ -207,9 +212,9 @@ hr {
           margin: 10px 0 30px 0;
 
           h2 {
-            background-color: $abt_h2_bg;
-            box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
-            border-radius: 1.2rem;
+            // background-color: $abt_h2_bg;
+            // box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
+            // border-radius: 1rem;
             padding: 10px;
             font-size: 2em;
             width: 100%;
@@ -220,7 +225,7 @@ hr {
             background-color: $abt_bg;
             font-size: 0.8em;
             box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
-            border-radius: 2rem 0 2rem 0;
+            border-radius: 1.4rem 0 1.4rem 0;
 
           }
         }
