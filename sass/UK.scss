@@ -187,6 +187,8 @@
 }
 
 .sidebar {
+  visibility: none;
+  opacity: 0;
   position: fixed;
   overflow: hidden;
   left: 0px; // to be set through gsap
