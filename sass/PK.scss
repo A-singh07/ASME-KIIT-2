@@ -3,6 +3,7 @@
 @import "config";
 @import "darkmode";
 
+
 /* ----- Sponsors ----- */
 
 .sponsors {
@@ -140,6 +141,7 @@ h6 {
 }
 
 .profilecard {
+  position: relative;
   order: 6;
   height: 220px;
   width: 220px;
