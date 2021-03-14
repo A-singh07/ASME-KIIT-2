@@ -121,13 +121,13 @@
                 </div>
             </div>
         </div>
-        <div class="blogpost_btn">
+        <!-- <div class="blogpost_btn">
             <p id="bp_btn">Blogs</p>
-        </div>
+        </div> -->
 
-        <div class="mode-toggler">
+        <!-- <div class="mode-toggler">
             <p id="toggle-p">Go Dark</p>
-        </div>
+        </div> -->
 
         <div id="logo">
             <img src="./Assets/ASME-logo.jpeg" alt="ASME-KIIT logo">
@@ -1032,6 +1032,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <!-- DarkMode -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
     </script>
 
     <!-- Custom JS File -->
