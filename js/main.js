@@ -64,7 +64,7 @@ tl.to(".intro", {
 //     tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 // }
 
-// tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
+tl.fromTo("#mother-container", { autoAlpha: "0" }, { autoAlpha: "1" }, "-=1");
 
 if (window.matchMedia("(min-width: 800px)").matches) {
 
@@ -73,7 +73,7 @@ if (window.matchMedia("(min-width: 800px)").matches) {
       trigger: "#home",
       start: "bottom 20%",
       toggleActions: "play none none reverse",
-      markers: true
+      markers: false
     }
   });
 
@@ -82,7 +82,7 @@ if (window.matchMedia("(min-width: 800px)").matches) {
       trigger: "#home",
       start: "bottom 15%",
       toggleActions: "play none none reverse",
-      markers: true
+      markers: false
     }
   });
 
@@ -101,7 +101,7 @@ else if (window.matchMedia("(max-width: 768px)").matches) {
       trigger: "#home",
       start: "bottom 40%",
       toggleActions: "play none none reverse",
-      markers: true
+      markers: false
     }
   });
 
