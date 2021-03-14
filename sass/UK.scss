@@ -11,12 +11,16 @@
   scroll-behavior: smooth;
 }
 
+.joinModal-open {
+  overflow: hidden !important;
+}
+
 .modal {
-  width: 60vw;
-  height: 75vh;
-  position: absolute;
-  left: 20%;
-  top: 10%;
+  // width: 60vw;
+  // height: 75vh;
+  // position: absolute;
+  // left: 20%;
+  // top: 10%;
 
   .modal-content {
     width: 60vw;
