@@ -121,21 +121,6 @@ hr {
   //     display: none;
   // }
 
-  .landing-cover {
-    @media screen and (max-width: $mobileL) {
-      height: 60vh;
-    }
-
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: $landing_cover;
-    z-index: 40;
-    opacity: 0.7;
-  }
-
   #logo {
     width: 130px;
     // height: 200px;
