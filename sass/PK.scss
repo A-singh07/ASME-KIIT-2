@@ -231,6 +231,7 @@ h6 {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   font-size: 20px;
+
 }
 
 .profilecard-back {
@@ -239,7 +240,9 @@ h6 {
   transform: rotateY(180deg);
   text-align: center;
   border-radius: 1rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profimg {
@@ -248,6 +251,10 @@ h6 {
 
 
 .profilecard-back h2 {
-  padding-top: 20px;
-  color: #000;
+
+  color: rgb(0, 0, 0);
+  align-self: center;
+  font-size: 20px;
+  font-weight: 650;
+
 }
