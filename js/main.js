@@ -87,7 +87,7 @@ if (window.matchMedia("(min-width: 800px)").matches) {
   });
 
   navTl
-    .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "15px" }, "-=0.5");
+    .fromTo("#sidebar", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "20px" }, "-=0.5");
   // .fromTo("#sidebar ul li", { x: "-100px" }, { x: "0", stagger: 0.1 }, "-=0.6");
   // .fromTo("#nav", { autoAlpha: 0, x: "-100px" }, { autoAlpha: 1, x: "20px" });
 
