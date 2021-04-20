@@ -421,7 +421,7 @@
   top: 25px;
   // bottom: 20px;
   width: 70px;
-  // height: 85vh;
+  height: 85vh;
   border-radius: 10px;
   z-index: 900;
   // border-top: 60px solid $nav_top;
@@ -434,7 +434,7 @@
     text-decoration: none;
     padding: 10px 0;
     width: 100%;
-    height: 85%;
+    height: 90%;
     // margin-top: 60px;
     display: flex;
     justify-content: center;
@@ -444,7 +444,7 @@
 
     li {
       width: 100%;
-      height: 60px;
+      height: 10.2%;
       transition: 0.3s ease;
       margin: 0 0 10px 0;
       position: relative;
@@ -621,7 +621,7 @@
     span {
       display: grid;
       grid-template-rows: 2fr 0.5fr;
-      width: 14rem;
+      width: 25%;
       height: 100%;
       padding: 2px 8px;
       // background-color: cadetblue;
