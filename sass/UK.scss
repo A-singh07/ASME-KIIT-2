@@ -343,10 +343,21 @@
   border: 1px solid $pc_shade3;
   @extend #nav;
 
+  @media screen and (width:280px) {
+    width: 40px !important;
+    height: 35px !important;
+    margin-top: 10px;
+  }
+
   i {
     font-size: 1.8em !important;
     padding: 8px 9px;
+
     // background-color: lightcoral;
+    @media screen and (width:280px) {
+      font-size: 1.5em !important;
+      padding: 5px 6px !important;
+    }
   }
 
   #hamburger-mob {
@@ -428,6 +439,10 @@
   background-color: $sidebar;
   box-shadow: 0px 1px 20px 0px $pc_shadow2;
   // background: pink;
+
+  @media screen and (min-width: 280px) and (max-width: 768px) {
+    height: 100vh;
+  }
 
   ul {
     list-style: none;
@@ -738,7 +753,7 @@
       width: 60px;
       position: absolute;
       right: 42%;
-      bottom: 5%;
+      bottom: 2%;
       background-color: $mode_toggler;
       border-radius: 15px;
       font-size: 1rem;
@@ -774,11 +789,11 @@
         right: 80px;
 
         #team-heads-img1 {
-          margin-bottom: 80px;
+          margin-bottom: 100px;
         }
 
         #team-heads-img2 {
-          margin-top: 80px;
+          margin-top: 100px;
         }
 
         .team-heads-img {
@@ -999,6 +1014,11 @@
 
   .team {
     height: 80vh;
+
+    .more-team-images_btn {
+      right: 46%;
+      // margin-top: 0 !important;
+    }
   }
 
   .sponsors {
@@ -1017,6 +1037,56 @@
 
   #team_bottom_hr {
     margin-top: 150px;
+  }
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+  .team {
+    height: 65vh !important;
+
+    .more-team-images_btn {
+      right: 48%;
+      // margin-top: 0 !important;
+    }
+  }
+
+  .content-container {
+    height: 65vh;
+    padding-top: 40px;
+
+    img {
+      height: 175px !important;
+      width: 175px !important;
+      // padding: 20px !important;
+    }
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 250px;
+  }
+
+  .site-footer {
+    position: relative;
+    top: 100px;
+  }
+
+  .blogpost_btn {
+    a {
+      height: 40px;
+      width: 40px;
+
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 

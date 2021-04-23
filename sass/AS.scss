@@ -92,7 +92,7 @@ hr {
     }
   }
 
-  @media screen and (min-width: $mobileS) and (max-width: $tablet) {
+  @media screen and (min-width: 280px) and (max-width: $tablet) {
     .intro-text {
       .hide {
         padding: 5px;
