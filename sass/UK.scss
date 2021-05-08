@@ -12,7 +12,6 @@
 }
 
 .modal {
-
   .modal-dialog {
     max-width: 850px !important;
   }
@@ -99,8 +98,6 @@
     }
   }
 
-
-
   // p {
   //   padding: 0 !important;
   //   margin: 0 !important;
@@ -133,7 +130,6 @@
     }
   }
 }
-
 
 .mode-toggler {
   width: 75px;
@@ -234,7 +230,6 @@
     font-family: $font1;
     border-radius: 8px;
   }
-
 }
 
 @media screen and (max-width: $mobileL) {
@@ -260,7 +255,6 @@
       margin-bottom: 0;
       padding: 2px;
     }
-
   }
 
   @media screen and (max-width: $tablet) {
@@ -343,7 +337,7 @@
   border: 1px solid $pc_shade3;
   @extend #nav;
 
-  @media screen and (width:280px) {
+  @media screen and (width: 280px) {
     width: 40px !important;
     height: 35px !important;
     margin-top: 10px;
@@ -354,7 +348,7 @@
     padding: 8px 9px;
 
     // background-color: lightcoral;
-    @media screen and (width:280px) {
+    @media screen and (width: 280px) {
       font-size: 1.5em !important;
       padding: 5px 6px !important;
     }
@@ -737,8 +731,7 @@
   display: none;
 }
 
-@media screen and (max-width:$tablet) {
-
+@media screen and (max-width: $tablet) {
   #gallery {
     margin-bottom: 0;
   }
@@ -748,7 +741,6 @@
   }
 
   .team {
-
     .more-team-images_btn {
       width: 60px;
       position: absolute;
@@ -813,7 +805,6 @@
             border-radius: 1.5em;
             width: 150px;
             height: 150px;
-
           }
         }
       }
@@ -867,7 +858,6 @@
       }
     }
   }
-
 }
 
 @media screen and (width: 280px) {
@@ -1011,7 +1001,6 @@
 }
 
 @media screen and (width: 540px) and (height: 720px) {
-
   .team {
     height: 80vh;
 
@@ -1093,23 +1082,43 @@
 // Team-docs
 
 .main_doc_container {
-
   @include sections_headings;
+  height: unset;
 
   .report_doc {
-
-    height: 65vh;
+    height: max-content;
     margin: auto;
     margin-top: 10px;
-    padding: 70px;
+    padding: 20px 20px 30px 30px;
     border-radius: 1.5rem;
-    // display: flex;
     box-shadow: $section_shadows;
 
+    .report-scroll-div {
+      padding: 20px;
+      max-height: 65vh;
+      min-height: 20vh;
+      overflow: auto;
+
+      @media screen and (max-width: 768px) {
+        padding: 10px;
+      }
+    }
     .sub_report_doc {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       margin-top: 30px;
+
+      span {
+        width: 250px;
+        margin-right: 10px;
+
+        img {
+          border-radius: 10px;
+          width: 100%;
+          border: 1px solid $pc_text;
+        }
+      }
 
       h5 {
         // width: 100%;
@@ -1120,35 +1129,22 @@
         /* background-color: chartreuse; */
       }
 
-      img {
-        height: 350px;
-        width: 350px;
-        border-radius: 1.5em;
-      }
+      // img {
+      //   height: 350px;
+      //   width: 350px;
+      //   border-radius: 1.5em;
+      // }
     }
-
   }
 }
 
 @media screen and (min-width: 319px) and (max-width: 720px) {
-
-  #main_doc_hr {
-    margin-top: 120px;
-  }
-
   .main_doc_container {
-
-    height: 100vh;
-
-
     .report_doc {
-      height: 100%;
-      // overflow-y: auto;
       overflow: hidden;
-      padding: 40px 0px 0px 0px !important;
+      padding: 10px 10px 10px !important;
       margin: 0 !important;
       justify-content: center;
-
 
       .sub_report_doc {
         display: block;
@@ -1156,54 +1152,25 @@
         overflow-x: hidden;
         height: 90%;
         text-align: center;
-        padding: 0px !important;
+        padding: 4px !important;
         margin: 0 !important;
         // margin-top: 50px;
         // margin-bottom: 50px;
         border-radius: 1.5em;
-
-        span {
-          // padding: 20px;
-          // margin: 20px;
-          // padding-top: 30px;
-          height: 65%;
-          width: 100%;
-
-
-          a {
-            height: 100%;
-            width: 100%;
-
-            img {
-              height: 300px !important;
-              width: 250px !important;
-            }
-          }
-        }
-
       }
     }
   }
 }
 
 @media screen and (width: 768px) and (height: 1024px) {
-  #main_doc_hr {
-    margin-top: 120px;
-  }
-
   .main_doc_container {
-
-    height: 100vh;
-
-
     .report_doc {
       height: 100%;
       // overflow-y: auto;
       overflow: hidden;
-      padding: 40px 0px 0px 0px !important;
+      padding: 0px !important;
       margin: 0 !important;
       justify-content: center;
-
 
       .sub_report_doc {
         display: block;
@@ -1215,26 +1182,6 @@
         margin: 0 !important;
         // margin-top: 50px;
         // margin-bottom: 50px;
-
-        span {
-          // padding: 20px;
-          // margin: 20px;
-          // padding-top: 30px;
-          height: 65%;
-          width: 100%;
-
-
-          a {
-            height: 100%;
-            width: 100%;
-
-            img {
-              height: 230px !important;
-              width: 230px !important;
-            }
-          }
-        }
-
       }
     }
   }
@@ -1246,18 +1193,13 @@
   }
 
   .main_doc_container {
-
     height: 100vh;
 
-
     .report_doc {
-      height: 100%;
-      // overflow-y: auto;
       overflow: hidden;
-      padding: 40px 0px 0px 0px !important;
+      padding: 0px !important;
       margin: 0 !important;
       justify-content: center;
-
 
       .sub_report_doc {
         display: flex;
@@ -1272,26 +1214,6 @@
         // margin-top: 50px;
         // margin-bottom: 50px;
         // background-color: aquamarine;
-
-        span {
-          // padding: 20px;
-          // margin: 20px;
-          // padding-top: 30px;
-          height: 75%;
-          width: 100%;
-
-
-          a {
-            height: 100%;
-            width: 100%;
-
-            img {
-              height: 280px !important;
-              width: 300px !important;
-            }
-          }
-        }
-
       }
     }
   }
@@ -1303,9 +1225,7 @@
   }
 
   .main_doc_container {
-
     height: 100vh;
-
 
     .report_doc {
       height: 100%;
@@ -1314,7 +1234,6 @@
       padding: 40px 0px 0px 0px !important;
       margin: 0 !important;
       justify-content: center;
-
 
       .sub_report_doc {
         display: block;
@@ -1326,26 +1245,6 @@
         margin: 0 !important;
         // margin-top: 50px;
         // margin-bottom: 50px;
-
-        span {
-          // padding: 20px;
-          // margin: 20px;
-          // padding-top: 30px;
-          height: 65%;
-          width: 100%;
-
-
-          a {
-            height: 100%;
-            width: 100%;
-
-            img {
-              height: 250px !important;
-              width: 200px !important;
-            }
-          }
-        }
-
       }
     }
   }
@@ -1364,10 +1263,10 @@
 }
 
 .rippleEffect {
-  -webkit-animation: rippleDrop .6s linear;
-  -moz-animation: rippleDrop .6s linear;
-  -o-animation: rippleDrop .6s linear;
-  animation: rippleDrop .6s linear;
+  -webkit-animation: rippleDrop 0.6s linear;
+  -moz-animation: rippleDrop 0.6s linear;
+  -o-animation: rippleDrop 0.6s linear;
+  animation: rippleDrop 0.6s linear;
 }
 
 @-webkit-keyframes rippleDrop {
